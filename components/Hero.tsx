@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative w-full h-screen flex flex-col justify-center items-center overflow-hidden bg-[#052902]">
-
       {/* Background Ambience */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-[#052902] to-[#021001] opacity-80" />
@@ -13,7 +12,6 @@ export default function Hero() {
 
       {/* Main Content Container - Higher and slightly more left */}
       <div className="relative z-10 flex flex-col items-start min-w-[300px] md:min-w-[600px] -mt-40 md:-mt-48 ml-4 md:-ml-12">
-
         {/* The Text Block */}
         <div className="relative">
           {/* Orange Circle - Solid orange color */}
@@ -30,7 +28,7 @@ export default function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="text-[12vw] md:text-[8rem] font-bold text-white tracking-tight leading-none relative z-10 font-sans"
           >
-            PORTFOLIO
+            PORTFOLIOO
           </motion.h1>
         </div>
 
@@ -53,12 +51,13 @@ export default function Hero() {
         style={{ clipPath: "ellipse(80% 60% at 20% 80%)" }} // Rough shape of a plate corner
       >
         <div className="absolute inset-0 flex items-center justify-center p-12">
-          <span className="text-black/20 font-bold uppercase tracking-widest text-lg">[ SILVER PLATE ]</span>
+          <span className="text-black/20 font-bold uppercase tracking-widest text-lg">
+            [ SILVER PLATE ]
+          </span>
         </div>
         {/* Shiny reflection */}
         <div className="absolute top-[20%] left-[20%] w-[40%] h-[10%] bg-white/40 blur-xl rounded-full transform -rotate-12" />
       </motion.div>
-
     </section>
   );
 }
