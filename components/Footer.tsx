@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full flex flex-col">
       {/* Full width image */}
-      <div className="w-full h-[20vh] md:h-[110vh] overflow-hidden">
+      <div className="w-full h-[40vh] md:h-screen overflow-hidden">
         <img
           src="/img/bae278e8-0b4f-467d-9209-b08daea32321.jpeg"
           alt="Gallery"
