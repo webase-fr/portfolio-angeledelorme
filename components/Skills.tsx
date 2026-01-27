@@ -15,12 +15,12 @@ export default function Skills() {
       <div className="w-full max-w-[95%] mx-auto flex flex-col gap-12">
 
         {/* Sticky Full-Width Header */}
-        <div className="sticky top-[76px] z-40 bg-[#052902] self-start w-full flex justify-between items-start border-b border-white/20 pb-8 pt-8">
+        <div className="sticky top-[76px] z-40 bg-[#052902] self-start w-full flex justify-between items-start border-b border-white/20 pb-6 md:pb-8 pt-6 md:pt-8">
           <div className="flex flex-col gap-2">
-            <h2 className="text-4xl md:text-5xl font-black uppercase text-white tracking-tighter">LOGICIELS INFORMATIQUES</h2>
+            <h2 className="text-2xl md:text-5xl font-black uppercase text-white tracking-tighter">LOGICIELS INFORMATIQUES</h2>
           </div>
-          {/* Badge */}
-          <div className="flex items-center gap-3">
+          {/* Badge - hidden on mobile */}
+          <div className="hidden md:flex items-center gap-3">
             <span className="w-3 h-3 bg-white/50 rounded-full"></span>
             <span className="border border-white/30 text-white px-4 py-1 text-xs font-bold uppercase tracking-widest">
               COMPÉTENCES

@@ -32,13 +32,13 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative w-full aspect-[3/4] md:h-[85vh] bg-red-600 rounded-sm overflow-hidden"
+            className="relative w-full aspect-[3/4] md:h-[85vh] rounded-sm overflow-hidden"
           >
-            {/* Placeholder for red portrait */}
-            <div className="absolute inset-0 bg-[#E63900] z-0" />
-            <div className="relative z-10 w-full h-full flex items-center justify-center">
-              <span className="text-white/20 font-bold text-4xl uppercase p-8 text-center">[ Portrait ]</span>
-            </div>
+            <img 
+              src="/img/IMG_2277.jpeg" 
+              alt="Portrait Angèle Delorme" 
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           {/* Right: Content */}

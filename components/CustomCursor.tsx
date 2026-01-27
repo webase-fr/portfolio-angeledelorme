@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { motion, useSpring } from "framer-motion";
 
 export default function CustomCursor() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   // Spring config for smooth trailing effect
   const springConfig = { damping: 25, stiffness: 150, mass: 0.5 };
@@ -12,8 +13,15 @@ export default function CustomCursor() {
   const cursorY = useSpring(0, springConfig);
 
   useEffect(() => {
+    setIsMounted(true);
+    // Check for touch device after mount
+    setIsTouchDevice("ontouchstart" in window);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted || isTouchDevice) return;
+
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
       if (!isVisible) setIsVisible(true);
@@ -36,16 +44,16 @@ export default function CustomCursor() {
       document.body.removeEventListener("mouseleave", handleMouseLeave);
       document.body.removeEventListener("mouseenter", handleMouseEnter);
     };
-  }, [cursorX, cursorY, isVisible]);
+  }, [cursorX, cursorY, isVisible, isMounted, isTouchDevice]);
 
-  // Hide on touch devices
-  if (typeof window !== "undefined" && "ontouchstart" in window) {
+  // Don't render on server or touch devices
+  if (!isMounted || isTouchDevice) {
     return null;
   }
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-10 h-10 pointer-events-none z-[100] mix-blend-difference"
+      className="fixed top-0 left-0 w-10 h-10 pointer-events-none z-[100] mix-blend-difference hidden md:block"
       style={{
         x: cursorX,
         y: cursorY,

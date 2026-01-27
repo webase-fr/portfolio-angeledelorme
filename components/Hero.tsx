@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-center items-center overflow-hidden bg-[#052902]">
+    <section className="relative w-full h-screen flex flex-col justify-center items-center bg-[#052902]">
       {/* Background Ambience */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-[#052902] to-[#021001] opacity-80" />
@@ -42,21 +42,18 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      {/* Silver Plate Image Placeholder - Bottom Left */}
+      {/* Silver Plate Image - Bottom Left - Large and overflowing (hidden on mobile) */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-        className="absolute bottom-[-10%] left-[-10%] w-[50vh] h-[50vh] md:w-[70vh] md:h-[70vh] bg-gradient-to-br from-neutral-200 via-neutral-400 to-neutral-600 rounded-full z-20 shadow-2xl border-4 border-neutral-300"
-        style={{ clipPath: "ellipse(80% 60% at 20% 80%)" }} // Rough shape of a plate corner
+        className="hidden md:block absolute bottom-[-35%] left-[-10%] w-[95vh] h-[95vh] z-20"
       >
-        <div className="absolute inset-0 flex items-center justify-center p-12">
-          <span className="text-black/20 font-bold uppercase tracking-widest text-lg">
-            [ SILVER PLATE ]
-          </span>
-        </div>
-        {/* Shiny reflection */}
-        <div className="absolute top-[20%] left-[20%] w-[40%] h-[10%] bg-white/40 blur-xl rounded-full transform -rotate-12" />
+        <img
+          src="/img/IMG_6362.PNG"
+          alt="Silver plate"
+          className="w-full h-full object-contain"
+        />
       </motion.div>
     </section>
   );

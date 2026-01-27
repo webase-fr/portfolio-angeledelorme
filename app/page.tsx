@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Discover from "@/components/Discover";
 import About from "@/components/About";
+import FullWidthImage from "@/components/FullWidthImage";
 import Motivation from "@/components/Motivation";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -46,6 +47,7 @@ export default function Home() {
         <Hero />
         <Discover />
         <About />
+        <FullWidthImage />
         <Motivation />
         <Skills />
         <Experience />
