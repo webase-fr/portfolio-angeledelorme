@@ -28,7 +28,7 @@ export default function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="text-[12vw] md:text-[8rem] font-bold text-white tracking-tight leading-none relative z-10 font-sans"
           >
-            PORTFOLIOO
+            PORTFOLIO
           </motion.h1>
         </div>
 
