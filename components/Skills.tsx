@@ -7,37 +7,55 @@ export default function Skills() {
       name: "Photoshop",
       logo: "/img/logos/Adobe_Photoshop_CC_icon.svg.png",
       color: "#31A8FF",
-      desc: "Retouche photo, photomontage, creation de visuels et composition d'images.",
+      desc: "J'ai deja utilise Photoshop a plusieurs reprises pour la realisation de divers projets.",
     },
     {
       name: "Lightroom",
       logo: "/img/logos/Adobe_Photoshop_Lightroom_CC_logo.svg.png",
       color: "#31A8FF",
-      desc: "Traitement colorimetrique, retouche par lots et edition de photos RAW.",
+      desc: "J'ai recours a Lightroom pour la retouche et l'harmonisation visuelle de mes projets.",
+    },
+    {
+      name: "Illustrator",
+      logo: "/img/logos/Adobe_Illustrator_CC_icon.svg",
+      color: "#FF9A00",
+      desc: "J'utilise Illustrator pour la creation graphique et vectorielle.",
     },
     {
       name: "InDesign",
       logo: "/img/logos/Adobe_InDesign_CC_icon.svg.png",
       color: "#FF3366",
-      desc: "Mise en page de documents, creation de supports print et edition.",
+      desc: "InDesign est mon outil pour la mise en page de mes documents.",
     },
     {
-      name: "Premiere Pro",
-      logo: "/img/logos/Adobe_Premiere_Pro_CC_icon.svg.png",
-      color: "#9999FF",
-      desc: "Montage video, assemblage de sequences et post-production.",
+      name: "Canva",
+      logo: "/img/logos/canva-icon-logo.png",
+      color: "#00C4CC",
+      desc: "Utilisation ponctuelle et maitrisee de Canva.",
     },
     {
-      name: "Figma",
-      logo: "/img/logos/Figma-logo.svg",
-      color: "#A259FF",
-      desc: "Prototypage, maquettage d'interfaces et design collaboratif.",
+      name: "SketchUp",
+      logo: "/img/logos/SketchUp-Mark-1200pxl-RGB.png",
+      color: "#005F9E",
+      desc: "SketchUp accompagne mon travail de conception spatiale.",
     },
     {
-      name: "Blender",
-      logo: "/img/logos/Blender_logo_no_text.svg.png",
-      color: "#E87D0D",
-      desc: "Modelisation 3D, rendu realiste et mise en scene d'objets.",
+      name: "Procreate",
+      logo: "/img/logos/Procreate_icon.png",
+      color: "#1A1A1A",
+      desc: "J'utilise principalement Procreate comme outil de creation.",
+    },
+    {
+      name: "Rhino",
+      logo: "/img/logos/rinho.png",
+      color: "#801010",
+      desc: "J'ai developpe des projets en modelisation 3D sur Rhino au cours de mon cursus.",
+    },
+    {
+      name: "Fusion 360",
+      logo: "/img/logos/autodesk-fusion-product-icon-400.png",
+      color: "#FF6B00",
+      desc: "Modelisation 3D parametrique et conception technique.",
     },
   ];
 
@@ -64,19 +82,19 @@ export default function Skills() {
         </motion.div>
 
         {/* Skills grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group relative p-6 md:p-7 rounded-lg border border-[var(--foreground)]/6 hover:border-[var(--accent)]/30 bg-[var(--surface)] transition-all duration-300 overflow-hidden"
+              transition={{ duration: 0.5, delay: index * 0.06 }}
+              className="group relative p-5 md:p-7 rounded-lg border border-[var(--foreground)]/6 hover:border-[var(--accent)]/30 bg-[var(--surface)] transition-all duration-300 overflow-hidden"
             >
               {/* Background glow */}
               <div
-                className="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-500 -translate-y-1/2 translate-x-1/2"
+                className="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-0 group-hover:opacity-15 transition-opacity duration-500 -translate-y-1/2 translate-x-1/2"
                 style={{ backgroundColor: skill.color }}
               />
 

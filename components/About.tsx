@@ -81,7 +81,7 @@ export default function About() {
             </div>
 
             {/* Objective */}
-            <div className="p-6 rounded-lg border border-[var(--foreground)]/8 bg-[var(--surface)]">
+            <div className="p-6 rounded-lg border border-[var(--foreground)]/10 bg-[var(--surface)]">
               <span className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] block mb-3">Mon objectif</span>
               <p className="text-sm font-light leading-relaxed text-[var(--foreground)]/60">
                 Aujourd&apos;hui, je souhaite orienter mon parcours vers le domaine de l&apos;evenementiel et l&apos;ensemble de ses branches creatives, en mettant le design au service de l&apos;experience, de l&apos;espace et de la narration.

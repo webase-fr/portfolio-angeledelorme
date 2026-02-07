@@ -4,20 +4,8 @@ import { ArrowLeft, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 
-/* ─── palette ─────────────────────────────────────────────
-   Product-launch feel — clean, bold, eco.
-   The grey of the 3D renders blends with grey accent sections.
-
-   Background  : warm off-white       #F5F3EE
-   Dark bg     : render grey           #6E6E6E
-   Text        : near-black            #1A1A1A
-   Accent      : fresh forest green    #2D8C5A  (growth, reforestation)
-   Secondary   : terracotta            #D4734E  (from illustrations)
-   ───────────────────────────────────────────────────────── */
-
-const BG    = "#F5F3EE";
-const DARK  = "#6E6E6E";
-const TXT   = "#1A1A1A";
+const BG = "#E6DCD1";
+const TXT = "#2B2119";
 const GREEN = "#2D8C5A";
 const TERRA = "#D4734E";
 
@@ -56,7 +44,7 @@ function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt:
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-200 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+            className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
             onClick={() => setOpen(false)}
           >
             <button onClick={() => setOpen(false)} className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10">
@@ -114,10 +102,10 @@ export default function SemeTElle() {
   return (
     <main className="min-h-screen flex flex-col" style={{ backgroundColor: BG, color: TXT }}>
 
-      {/* ─ Header */}
+      {/* Header */}
       <header
         className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 backdrop-blur-md"
-        style={{ backgroundColor: `${BG}dd` }}
+        style={{ backgroundColor: `${BG}cc` }}
       >
         <Link href="/" className="flex items-center gap-3 hover:opacity-60 transition-opacity">
           <ArrowLeft className="w-5 h-5" />
@@ -128,10 +116,9 @@ export default function SemeTElle() {
 
       <div className="h-24" />
 
-      {/* ─ Hero — Titre + image semelle a droite */}
+      {/* Hero */}
       <section className="w-full px-6 md:px-12 pt-12 md:pt-20 pb-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          {/* Left — Title */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -158,7 +145,6 @@ export default function SemeTElle() {
             </div>
           </motion.div>
 
-          {/* Right — Semelle 3D */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -167,7 +153,7 @@ export default function SemeTElle() {
           >
             <Lightbox
               src="/img/seme-t-elle/semelle/page-01.jpg"
-              alt="Chaussure et semelle — modélisation 3D"
+              alt="Chaussure et semelle — modelisation 3D"
               className="w-full h-auto max-h-[60vh] object-contain"
               wrapperClassName="rounded-lg"
             />
@@ -175,10 +161,10 @@ export default function SemeTElle() {
         </div>
       </section>
 
-      {/* ─ Section grise — showcase 3D profil + face */}
+      {/* Section grise — showcase 3D */}
       <section
-        className="w-full py-16 md:py-24 mt-12"
-        style={{ backgroundColor: DARK }}
+        className="w-full py-16 md:py-24 mt-12 rounded-lg mx-4 md:mx-8"
+        style={{ backgroundColor: "#6E6E6E" }}
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <motion.div
@@ -224,7 +210,7 @@ export default function SemeTElle() {
         </div>
       </section>
 
-      {/* ─ Texte descriptif */}
+      {/* Texte descriptif */}
       <section className="w-full px-6 md:px-12 py-20 md:py-32">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-start">
           <motion.div
@@ -262,7 +248,7 @@ export default function SemeTElle() {
         </div>
       </section>
 
-      {/* ─ Citation visuelle */}
+      {/* Citation visuelle */}
       <section className="w-full px-6 md:px-12 py-12 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -284,7 +270,7 @@ export default function SemeTElle() {
         </div>
       </section>
 
-      {/* ─ Carousel — Dessins de mise en situation */}
+      {/* Carousel — Dessins */}
       <section className="w-full py-16 md:py-24 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 md:px-12 mb-10">
           <motion.div
@@ -349,7 +335,6 @@ export default function SemeTElle() {
             ))}
           </div>
 
-          {/* Progress bar */}
           <div className="max-w-6xl mx-auto px-6 md:px-12 mt-8">
             <div className="w-full h-[2px] rounded-full" style={{ backgroundColor: `${TXT}10` }}>
               <div
@@ -361,19 +346,19 @@ export default function SemeTElle() {
         </motion.div>
       </section>
 
-      {/* ─ Navigation entre projets */}
+      {/* Navigation */}
       <section className="w-full px-6 md:px-12 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
           <div className="pt-12" style={{ borderTop: `1px solid ${TXT}12` }}>
             <div className="flex justify-between items-center">
               <Link
-                href="/projets/eclairer-les-sens"
+                href="/projets/au-fil-des-objets"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
                   <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
-                  <span className="text-base md:text-xl font-light">Eclairer les Sens</span>
+                  <span className="text-base md:text-xl font-light">Au fil des objets</span>
                 </div>
               </Link>
 
@@ -392,7 +377,7 @@ export default function SemeTElle() {
         </div>
       </section>
 
-      {/* ─ Footer */}
+      {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angele Delorme</span>

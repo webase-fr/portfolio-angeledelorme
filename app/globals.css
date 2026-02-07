@@ -1,30 +1,37 @@
 @import "tailwindcss";
 
+/* Force class-based dark mode — prevents OS dark mode from applying */
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #111111;
-  --foreground: #F0EDE8;
-  --accent: #C8907E;
-  --accent-light: #E8B9A8;
-  --muted: #888580;
-  --surface: #1A1A1A;
+  --background: #E6DCD1;
+  --foreground: #2B2119;
+  --accent: #C03A2B;
+  --accent-light: #D44E3F;
+  --muted: #8B7D6B;
+  --surface: #DDD2C5;
   --navbar-height: 80px;
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
+  --color-background: #E6DCD1;
+  --color-foreground: #2B2119;
+  --color-accent: #C03A2B;
 }
 
 html {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #E6DCD1 !important;
+  color: #2B2119 !important;
+  color-scheme: light !important;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   overflow-x: clip;
+  background-color: #E6DCD1 !important;
+  color: #2B2119;
 }
 
 .text-accent {

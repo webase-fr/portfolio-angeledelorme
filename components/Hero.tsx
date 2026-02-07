@@ -7,14 +7,26 @@ import { ArrowUpRight } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-end pb-16 md:pb-24 px-6 md:px-10 overflow-hidden">
-      {/* Background image with overlay */}
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
           src="/img/IMG_6289.JPG"
           alt="Background"
           className="w-full h-full object-cover object-[30%_center] md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/70 to-[#111111]/30" />
+        {/* Full overlay for contrast */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `linear-gradient(to top, 
+              rgba(0,0,0,0.7) 0%, 
+              rgba(0,0,0,0.5) 20%,
+              rgba(0,0,0,0.2) 45%,
+              rgba(0,0,0,0.1) 60%,
+              rgba(0,0,0,0.25) 100%
+            )`,
+          }}
+        />
       </div>
 
       {/* Content */}
@@ -27,21 +39,21 @@ export default function Hero() {
         >
           {/* Small label */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-px bg-[var(--accent)]" />
-            <span className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/50">
+            <div className="w-8 h-px bg-white/60" />
+            <span className="text-xs tracking-[0.3em] uppercase text-white/90">
               Portfolio 2024
             </span>
           </div>
 
           {/* Main title */}
-          <h1 className="text-[12vw] md:text-[7rem] lg:text-[9rem] font-extralight leading-[0.85] tracking-tight">
+          <h1 className="text-[12vw] md:text-[7rem] lg:text-[9rem] font-extralight leading-[0.85] tracking-tight text-white">
             Design
             <br />
-            <span className="italic font-normal text-[var(--accent)]">Evenementiel</span>
+            <span className="italic font-normal text-white">Evenementiel</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-sm md:text-base font-light tracking-wide text-[var(--foreground)]/50 max-w-md mt-4">
+          <p className="text-base md:text-lg font-normal tracking-wide text-white/90 max-w-md mt-4">
             Espace, scenographie &amp; conception d&apos;objets.
             <br />
             Du dessin a la realisation.
@@ -50,7 +62,7 @@ export default function Hero() {
           {/* CTA Button */}
           <Link
             href="/projets/au-fil-des-objets"
-            className="mt-6 inline-flex items-center gap-3 px-7 py-3.5 rounded-full border border-[var(--foreground)]/20 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#111] transition-all duration-300 text-sm font-light tracking-wide w-fit"
+            className="mt-6 inline-flex items-center gap-3 px-7 py-3.5 rounded-full border border-white/50 text-white font-normal hover:bg-white hover:border-white hover:text-[#2B2119] transition-all duration-300 text-sm tracking-wide w-fit backdrop-blur-sm bg-white/10"
           >
             Voir mes projets
             <ArrowUpRight className="w-4 h-4" />

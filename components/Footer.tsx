@@ -43,7 +43,7 @@ export default function Footer() {
             {/* Contact button */}
             <a
               href="mailto:contact@angeleprops.com"
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--foreground)]/15 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#111] transition-all duration-300 text-sm font-light tracking-wide"
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--foreground)]/15 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#E6DCD1] transition-all duration-300 text-sm font-light tracking-wide"
             >
               Contactez-moi
               <ArrowUpRight className="w-4 h-4" />

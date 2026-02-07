@@ -4,18 +4,8 @@ import { ArrowLeft, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 
-/* ─── palette ─────────────────────────────────────────────
-   Print portfolio / magazine feel — clean & bold.
-   White paper background lets the colorful report pages pop.
-
-   Background  : paper white            #FAFAF8
-   Text        : near-black             #1A1A1A
-   Accent      : electric blue          #3B5FE6  (from Lamain page)
-   Secondary   : magenta pink           #D44B8A  (from upcycling + scenography)
-   ───────────────────────────────────────────────────────── */
-
-const BG   = "#FAFAF8";
-const TXT  = "#1A1A1A";
+const BG = "#E6DCD1";
+const TXT = "#2B2119";
 const BLUE = "#3B5FE6";
 const PINK = "#D44B8A";
 
@@ -47,7 +37,7 @@ function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt:
           <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-200 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-8 cursor-zoom-out"
+            className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-8 cursor-zoom-out"
             onClick={() => setOpen(false)}
           >
             <button onClick={() => setOpen(false)} className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10">
@@ -106,10 +96,10 @@ export default function RapportDeStage() {
   return (
     <main className="min-h-screen flex flex-col" style={{ backgroundColor: BG, color: TXT }}>
 
-      {/* ─ Header */}
+      {/* Header */}
       <header
         className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 backdrop-blur-md"
-        style={{ backgroundColor: `${BG}ee` }}
+        style={{ backgroundColor: `${BG}cc` }}
       >
         <Link href="/" className="flex items-center gap-3 hover:opacity-60 transition-opacity">
           <ArrowLeft className="w-5 h-5" />
@@ -120,10 +110,9 @@ export default function RapportDeStage() {
 
       <div className="h-24" />
 
-      {/* ─ Hero — Couverture du rapport */}
+      {/* Hero */}
       <section className="w-full px-6 md:px-12 pt-12 md:pt-20 pb-8">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-10 md:gap-16 items-center">
-          {/* Left: Title */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -150,7 +139,6 @@ export default function RapportDeStage() {
             </div>
           </motion.div>
 
-          {/* Right: Cover image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -166,7 +154,7 @@ export default function RapportDeStage() {
         </div>
       </section>
 
-      {/* ─ Texte descriptif */}
+      {/* Texte descriptif */}
       <section className="w-full px-6 md:px-12 py-20 md:py-28">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-20 items-start">
           <motion.div
@@ -198,7 +186,7 @@ export default function RapportDeStage() {
         </div>
       </section>
 
-      {/* ─ Carousel — Pages du rapport */}
+      {/* Carousel */}
       <section className="w-full py-16 md:py-24 overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 md:px-12 mb-10">
           <motion.div
@@ -268,7 +256,6 @@ export default function RapportDeStage() {
             ))}
           </div>
 
-          {/* Progress bar */}
           <div className="max-w-5xl mx-auto px-6 md:px-12 mt-8">
             <div className="w-full h-[2px] rounded-full" style={{ backgroundColor: `${TXT}08` }}>
               <div
@@ -283,19 +270,19 @@ export default function RapportDeStage() {
         </motion.div>
       </section>
 
-      {/* ─ Navigation entre projets */}
+      {/* Navigation */}
       <section className="w-full px-6 md:px-12 py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
-          <div className="pt-12" style={{ borderTop: `1px solid ${TXT}10` }}>
+          <div className="pt-12" style={{ borderTop: `1px solid ${TXT}15` }}>
             <div className="flex justify-between items-center">
               <Link
-                href="/projets/intime-au-commun"
+                href="/projets/chaises-de-chair"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
                   <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
-                  <span className="text-base md:text-xl font-light">De l&apos;intime au commun</span>
+                  <span className="text-base md:text-xl font-light">Chaise de Chair</span>
                 </div>
               </Link>
 
@@ -314,7 +301,7 @@ export default function RapportDeStage() {
         </div>
       </section>
 
-      {/* ─ Footer */}
+      {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}06` }}>
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angele Delorme</span>

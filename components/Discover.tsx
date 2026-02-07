@@ -75,7 +75,7 @@ export default function Discover() {
               <span className="text-xs text-[var(--foreground)]/40">Cliquez pour decouvrir le premier projet</span>
             </div>
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <ArrowRight className="w-5 h-5 text-[#111]" />
+              <ArrowRight className="w-5 h-5 text-[#E6DCD1]" />
             </div>
           </Link>
         </motion.div>
@@ -91,18 +91,19 @@ export default function Discover() {
               transition={{ duration: 0.7, delay: index * 0.15 }}
               className="group flex flex-col"
             >
-              {/* Image */}
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-[var(--surface)]">
+              {/* Image — full visible, smaller inside card */}
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-5 bg-[var(--surface)] flex items-center justify-center p-6">
                 <img
                   src={cat.image}
                   alt={cat.label}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#111]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <h3 className="text-2xl md:text-3xl font-extralight tracking-tight">{cat.label}</h3>
-                  <span className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/50">{cat.subtitle}</span>
-                </div>
+              </div>
+
+              {/* Label + subtitle — below image */}
+              <div className="mb-4">
+                <h3 className="text-xl md:text-2xl font-light tracking-tight">{cat.label}</h3>
+                <span className="text-xs tracking-[0.15em] uppercase text-[var(--muted)]">{cat.subtitle}</span>
               </div>
 
               {/* Project list */}
@@ -111,7 +112,7 @@ export default function Discover() {
                   <Link
                     key={proj.name}
                     href={proj.href}
-                    className="flex items-center justify-between py-3.5 border-b border-[var(--foreground)]/8 group/link hover:border-[var(--accent)]/40 transition-colors"
+                    className="flex items-center justify-between py-3 border-b border-[var(--foreground)]/8 group/link hover:border-[var(--accent)]/40 transition-colors"
                   >
                     <span className="text-sm font-light tracking-wide group-hover/link:text-[var(--accent)] transition-colors">
                       {proj.name}

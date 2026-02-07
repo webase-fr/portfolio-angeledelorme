@@ -310,12 +310,12 @@ export default function ChaisesDeChair() {
               </Link>
 
               <Link
-                href="/projets/au-fil-des-objets"
+                href="/projets/rapport-de-stage"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
                   <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Suivant</span>
-                  <span className="text-base md:text-xl font-light">Au fil des objets</span>
+                  <span className="text-base md:text-xl font-light">Rapport de stage</span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />
               </Link>

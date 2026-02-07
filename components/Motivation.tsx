@@ -45,7 +45,7 @@ export default function Motivation() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="flex flex-col justify-center"
           >
-            <div className="p-8 md:p-10 rounded-lg border border-[var(--foreground)]/8 bg-[var(--surface)] relative">
+            <div className="p-8 md:p-10 rounded-lg border border-[var(--foreground)]/10 bg-[var(--surface)] relative">
               {/* Accent dot */}
               <div className="absolute -top-2 -left-2 w-4 h-4 rounded-full bg-[var(--accent)]" />
 

@@ -21,14 +21,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col">
+    <main className="min-h-screen bg-[#E6DCD1] text-[#2B2119] flex flex-col">
       <CustomCursor />
 
       <AnimatePresence mode="wait">
         {loading && (
           <motion.div
             key="loader"
-            className="fixed inset-0 z-[100] bg-[#0a0a0a] flex items-center justify-center pointer-events-none"
+            className="fixed inset-0 z-[100] bg-[#E6DCD1] flex items-center justify-center pointer-events-none"
             initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
             exit={{
               clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
