@@ -7,19 +7,19 @@ export default function Skills() {
       name: "Photoshop",
       logo: "/img/logos/Adobe_Photoshop_CC_icon.svg.png",
       color: "#31A8FF",
-      desc: "J'ai deja utilise Photoshop a plusieurs reprises pour la realisation de divers projets.",
+      desc: "J'ai déjà utilisé Photoshop à plusieurs reprises pour la réalisation de divers projets.",
     },
     {
       name: "Lightroom",
       logo: "/img/logos/Adobe_Photoshop_Lightroom_CC_logo.svg.png",
       color: "#31A8FF",
-      desc: "J'ai recours a Lightroom pour la retouche et l'harmonisation visuelle de mes projets.",
+      desc: "J'ai recours à Lightroom pour la retouche et l'harmonisation visuelle de mes projets.",
     },
     {
       name: "Illustrator",
       logo: "/img/logos/Adobe_Illustrator_CC_icon.svg",
       color: "#FF9A00",
-      desc: "J'utilise Illustrator pour la creation graphique et vectorielle.",
+      desc: "J'utilise Illustrator pour la création graphique et vectorielle.",
     },
     {
       name: "InDesign",
@@ -31,7 +31,7 @@ export default function Skills() {
       name: "Canva",
       logo: "/img/logos/canva-icon-logo.png",
       color: "#00C4CC",
-      desc: "Utilisation ponctuelle et maitrisee de Canva.",
+      desc: "Utilisation ponctuelle et maîtrisée de Canva.",
     },
     {
       name: "SketchUp",
@@ -43,19 +43,19 @@ export default function Skills() {
       name: "Procreate",
       logo: "/img/logos/Procreate_icon.png",
       color: "#1A1A1A",
-      desc: "J'utilise principalement Procreate comme outil de creation.",
+      desc: "J'utilise principalement Procreate comme outil de création.",
     },
     {
       name: "Rhino",
       logo: "/img/logos/rinho.png",
       color: "#801010",
-      desc: "J'ai developpe des projets en modelisation 3D sur Rhino au cours de mon cursus.",
+      desc: "J'ai développé des projets en modélisation 3D sur Rhino au cours de mon cursus.",
     },
     {
       name: "Fusion 360",
       logo: "/img/logos/autodesk-fusion-product-icon-400.png",
       color: "#FF6B00",
-      desc: "Modelisation 3D parametrique et conception technique.",
+      desc: "Modélisation 3D paramétrique et conception technique.",
     },
   ];
 
@@ -71,13 +71,13 @@ export default function Skills() {
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16"
         >
           <div>
-            <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Competences</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Compétences</span>
             <h2 className="text-4xl md:text-6xl font-extralight tracking-tight">
               Logiciels <span className="italic text-[var(--accent)]">&amp; outils</span>
             </h2>
           </div>
           <span className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/30">
-            {skills.length} maitrises
+            {skills.length} maîtrisés
           </span>
         </motion.div>
 

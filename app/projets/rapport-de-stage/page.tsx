@@ -10,7 +10,7 @@ const BLUE = "#3B5FE6";
 const PINK = "#D44B8A";
 
 const pages = Array.from({ length: 14 }, (_, i) => ({
-  src: `/img/rapport-stage-web/IMG_${6485 + i}.jpg`,
+  src: `/img/rapport-stage-web/IMG_${6498 - i}.jpg`,
   alt: `Rapport de stage — page ${i + 1}`,
 }));
 
@@ -105,7 +105,7 @@ export default function RapportDeStage() {
           <ArrowLeft className="w-5 h-5" />
           <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angele Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angèle Delorme</span>
       </header>
 
       <div className="h-24" />
@@ -175,12 +175,12 @@ export default function RapportDeStage() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed" style={{ color: `${TXT}cc` }}>
-              Ce rapport de stage presente deux mois d&apos;immersion dans un{" "}
-              <span className="font-medium" style={{ color: BLUE }}>atelier de conception scenographique</span>,
-              avec une participation a divers projets et la realisation graphique des pages de ce rapport.
+              Ce rapport de stage présente deux mois d&apos;immersion dans un{" "}
+              <span className="font-medium" style={{ color: BLUE }}>atelier de conception scénographique</span>,
+              avec une participation à divers projets et la réalisation graphique des pages de ce rapport.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed mt-8" style={{ color: `${TXT}60` }}>
-              De l&apos;upcycling de chaises a la scenographie de festivals, en passant par la fabrication de decors sur mesure pour des marques — chaque projet a ete une occasion d&apos;apprendre et de creer.
+              De l&apos;upcycling de chaises à la scénographie de festivals, en passant par la fabrication de décors sur mesure pour des marques — chaque projet a été une occasion d&apos;apprendre et de créer.
             </p>
           </motion.div>
         </div>
@@ -281,7 +281,7 @@ export default function RapportDeStage() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
                   <span className="text-base md:text-xl font-light">Chaise de Chair</span>
                 </div>
               </Link>
@@ -304,7 +304,7 @@ export default function RapportDeStage() {
       {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}06` }}>
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angele Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angèle Delorme</span>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: BLUE }} />
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: PINK }} />

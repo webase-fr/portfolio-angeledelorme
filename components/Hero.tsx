@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-end pb-16 md:pb-24 px-6 md:px-10 overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-end pb-10 md:pb-16 px-6 md:px-10 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="flex items-center gap-3">
             <div className="w-8 h-px bg-white/60" />
             <span className="text-xs tracking-[0.3em] uppercase text-white/90">
-              Portfolio 2024
+              Portfolio
             </span>
           </div>
 
@@ -49,14 +49,14 @@ export default function Hero() {
           <h1 className="text-[12vw] md:text-[7rem] lg:text-[9rem] font-extralight leading-[0.85] tracking-tight text-white">
             Design
             <br />
-            <span className="italic font-normal text-white">Evenementiel</span>
+            <span className="italic font-normal text-white">Événementiel</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-base md:text-lg font-normal tracking-wide text-white/90 max-w-md mt-4">
-            Espace, scenographie &amp; conception d&apos;objets.
+            Espace, scénographie &amp; conception d&apos;objets.
             <br />
-            Du dessin a la realisation.
+            Du dessin à la réalisation.
           </p>
 
           {/* CTA Button */}

@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Angele Delorme — Portfolio Design",
-  description: "Portfolio de design d'espace, scénographie et conception d'objets par Angèle Delorme.",
+  title: "Angèle Delorme — Portfolio Design",
+  description:
+    "Portfolio de design d'espace, scénographie et conception d'objets par Angèle Delorme.",
 };
 
 export default function RootLayout({
@@ -23,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${geistSans.variable} ${geistMono.variable}`} style={{ colorScheme: 'light' }}>
+    <html
+      lang="fr"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+      style={{ colorScheme: "light" }}
+    >
       <body className="antialiased font-sans bg-[#E6DCD1] text-[#2B2119]">
         {children}
       </body>

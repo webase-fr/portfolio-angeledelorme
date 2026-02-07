@@ -43,7 +43,6 @@ export default function Home() {
       <div className="flex flex-col w-full">
         <Hero />
         <Discover />
-        <FullWidthImage />
         <About />
         <Motivation />
         <Skills />

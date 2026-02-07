@@ -90,7 +90,7 @@ export default function ChaisesDeChair() {
           <ArrowLeft className="w-5 h-5" />
           <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-30">Angele Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-30">Angèle Delorme</span>
       </header>
 
       <div className="h-24" />
@@ -135,7 +135,7 @@ export default function ChaisesDeChair() {
                 style={{ backgroundColor: RED }}
               />
               <p className="text-sm md:text-base tracking-wide opacity-50 max-w-md">
-                Une installation pour le Planning Familial d&apos;Orleans
+                Une installation pour le Planning Familial d&apos;Orléans
               </p>
             </div>
           </motion.div>
@@ -184,13 +184,13 @@ export default function ChaisesDeChair() {
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
               <span className="italic" style={{ color: RED }}>Chaise de Chair</span>{" "}
-              est un projet concu pour une exposition a la demande du Planning Familial
-              d&apos;Orleans. Ne d&apos;echanges avec des femmes excisees, il vise a mettre en lumiere leur vecu et
+              est un projet conçu pour une exposition à la demande du Planning Familial
+              d&apos;Orléans. Né d&apos;échanges avec des femmes excisées, il vise à mettre en lumière leur vécu et
               sensibiliser sur ce sujet.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed opacity-50 mt-8">
-              Nous avons participe a l&apos;organisation de l&apos;exposition et presente notre
-              travail a un public ouvert a tous, offrant ainsi une experience accessible et engagee.
+              Nous avons participé à l&apos;organisation de l&apos;exposition et présenté notre
+              travail à un public ouvert à tous, offrant ainsi une expérience accessible et engagée.
             </p>
           </motion.div>
         </div>
@@ -247,7 +247,7 @@ export default function ChaisesDeChair() {
               />
             </div>
             <blockquote className="text-2xl md:text-4xl font-extralight leading-snug italic opacity-70">
-              &laquo;&nbsp;Trois chaises, trois vecus, trois temoignages.
+              &laquo;&nbsp;Trois chaises, trois vécus, trois témoignages.
               <br />
               <span className="not-italic font-normal" style={{ color: RED }}>Le bois brut</span> porte la marque de ce qui ne se dit pas toujours.&nbsp;&raquo;
             </blockquote>
@@ -304,7 +304,7 @@ export default function ChaisesDeChair() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
                   <span className="text-base md:text-xl font-light">Posture Quotidienne</span>
                 </div>
               </Link>
@@ -330,7 +330,7 @@ export default function ChaisesDeChair() {
         style={{ borderTop: `1px solid ${TXT}10` }}
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-25">Angele Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-25">Angèle Delorme</span>
           <div className="flex items-center gap-3">
             <div
               className="w-1.5 h-1.5 rounded-full"

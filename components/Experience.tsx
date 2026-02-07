@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const experiences = [
     {
+      year: "2026",
+      title: "Cheffe décoratrice",
+      role: "Direction artistique & scénographie",
+      desc: "J'ai pris part à la réalisation d'un clip musical pour un artiste en début de parcours, en assurant la scénographie et la direction artistique du projet.",
+    },
+    {
       year: "2025",
       title: "Exposition — Planning Familial",
       role: "Demande de projet",
-      desc: "Dans le cadre d'une collaboration entre le Planning Familial et l'ESAD d'Orleans, j'ai concu un projet destine a une exposition ouverte au public, mettant en lumiere la realite de l'excision a travers des temoignages de femmes.",
+      desc: "Dans le cadre d'une collaboration entre le Planning Familial et l'ESAD d'Orléans, j'ai conçu un projet destiné à une exposition ouverte au public, mettant en lumière la réalité de l'excision à travers des témoignages de femmes.",
     },
     {
       year: "2024",
       title: "LAMAIN",
-      role: "Stage de conception scenographique",
-      desc: "Lors d'un stage de deux mois au sein d'un atelier, j'ai participe a la creation de la scenographie d'un festival, de la phase de conception a la mise en oeuvre sur le terrain.",
-    },
-    {
-      year: "2026",
-      title: "Cheffe decoratrice",
-      role: "Direction artistique & scenographie",
-      desc: "J'ai pris part a la realisation d'un clip musical pour un artiste en debut de parcours, en assurant la scenographie et la direction artistique du projet.",
+      role: "Stage de conception scénographique",
+      desc: "Lors d'un stage de deux mois au sein d'un atelier, j'ai participé à la création de la scénographie d'un festival, de la phase de conception à la mise en œuvre sur le terrain.",
     },
   ];
 
@@ -37,11 +37,11 @@ export default function Experience() {
           <div>
             <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Parcours</span>
             <h2 className="text-4xl md:text-6xl font-extralight tracking-tight">
-              Experiences <span className="italic text-[var(--accent)]">pro</span>
+              Expériences <span className="italic text-[var(--accent)]">pro</span>
             </h2>
           </div>
           <span className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/30">
-            Professionnel / Creative
+            Professionnel / Créative
           </span>
         </motion.div>
 

@@ -111,7 +111,7 @@ export default function PostureQuotidienne() {
           <ArrowLeft className="w-5 h-5" />
           <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-30">Angele Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-30">Angèle Delorme</span>
       </header>
 
       <div className="h-24" />
@@ -187,11 +187,11 @@ export default function PostureQuotidienne() {
             className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20"
           >
             <div>
-              <span className="text-xs tracking-[0.3em] uppercase opacity-40 block mb-4">A propos du projet</span>
+              <span className="text-xs tracking-[0.3em] uppercase opacity-40 block mb-4">À propos du projet</span>
               <div className="w-12 h-[2px]" style={{ backgroundColor: `${ACCENT}60` }} />
             </div>
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
-              Ce projet interroge les postures du quotidien dans l&apos;espace public. A travers des maquettes et des silhouettes, il capture les gestes inconscients que nous adoptons dans les lieux de passage — attente, mouvement, immobilite. Une observation sensible du corps dans son environnement.
+              Ce projet interroge les postures du quotidien dans l&apos;espace public. À travers des maquettes et des silhouettes, il capture les gestes inconscients que nous adoptons dans les lieux de passage — attente, mouvement, immobilité. Une observation sensible du corps dans son environnement.
             </p>
           </motion.div>
         </div>
@@ -305,7 +305,7 @@ export default function PostureQuotidienne() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
                   <span className="text-base md:text-xl font-light">De l&apos;intime au commun</span>
                 </div>
               </Link>
@@ -328,7 +328,7 @@ export default function PostureQuotidienne() {
       {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}10` }}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-25">Angele Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-25">Angèle Delorme</span>
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: ACCENT }} />
             <span className="text-xs opacity-25">2024</span>

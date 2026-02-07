@@ -111,7 +111,7 @@ export default function SemeTElle() {
           <ArrowLeft className="w-5 h-5" />
           <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angele Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angèle Delorme</span>
       </header>
 
       <div className="h-24" />
@@ -130,7 +130,7 @@ export default function SemeTElle() {
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85]">
-              <span style={{ color: GREEN }}>Seme</span>
+              <span style={{ color: GREEN }}>Sème</span>
               <span className="opacity-30">-</span>
               t
               <span className="opacity-30">-</span>
@@ -153,7 +153,7 @@ export default function SemeTElle() {
           >
             <Lightbox
               src="/img/seme-t-elle/semelle/page-01.jpg"
-              alt="Chaussure et semelle — modelisation 3D"
+              alt="Chaussure et semelle — modélisation 3D"
               className="w-full h-auto max-h-[60vh] object-contain"
               wrapperClassName="rounded-lg"
             />
@@ -174,7 +174,7 @@ export default function SemeTElle() {
             transition={{ duration: 0.6 }}
             className="mb-10"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/40">Modelisation 3D</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/40">Modélisation 3D</span>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -235,14 +235,14 @@ export default function SemeTElle() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed" style={{ color: `${TXT}cc` }}>
-              <span className="font-medium" style={{ color: GREEN }}>Seme-t-elle</span>{" "}
+              <span className="font-medium" style={{ color: GREEN }}>Sème-t-elle</span>{" "}
               est un projet qui associe design d&apos;objet et action collective.
-              En permettant de semer tout en marchant, elle invite a la reforestation a travers des temps partages
+              En permettant de semer tout en marchant, elle invite à la reforestation à travers des temps partagés
               et collaboratifs.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed mt-8" style={{ color: `${TXT}70` }}>
-              Pensee comme une experience a vivre a plusieurs ou seule, elle transforme une action ecologique en
-              evenement social et participatif.
+              Pensée comme une expérience à vivre à plusieurs ou seule, elle transforme une action écologique en
+              événement social et participatif.
             </p>
           </motion.div>
         </div>
@@ -259,7 +259,7 @@ export default function SemeTElle() {
           >
             <p className="text-3xl md:text-5xl font-extralight leading-snug tracking-tight">
               Chaque pas{" "}
-              <span className="font-medium" style={{ color: GREEN }}>seme</span>
+              <span className="font-medium" style={{ color: GREEN }}>sème</span>
               ,
               <br />
               chaque marche{" "}
@@ -357,7 +357,7 @@ export default function SemeTElle() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
                   <span className="text-base md:text-xl font-light">Au fil des objets</span>
                 </div>
               </Link>
@@ -368,7 +368,7 @@ export default function SemeTElle() {
               >
                 <div className="flex flex-col">
                   <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Suivant</span>
-                  <span className="text-base md:text-xl font-light">Eclairer les Sens</span>
+                  <span className="text-base md:text-xl font-light">Éclairer les Sens</span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />
               </Link>
@@ -380,7 +380,7 @@ export default function SemeTElle() {
       {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angele Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angèle Delorme</span>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: GREEN }} />
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TERRA }} />

@@ -25,7 +25,7 @@ export default function FullWidthImage() {
         >
           <motion.img
             src="/img/bae278e8-0b4f-467d-9209-b08daea32321.jpeg"
-            alt="Scenographie atelier"
+            alt="Scénographie atelier"
             className="w-full h-full object-cover object-[center_35%]"
             style={{ scale, y }}
           />

@@ -13,52 +13,27 @@ export default function Motivation() {
           transition={{ duration: 0.8 }}
           className="mb-16 md:mb-20"
         >
-          <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Motivation</span>
+          <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Inspiration &amp; créativité</span>
           <h2 className="text-4xl md:text-6xl font-extralight tracking-tight">
-            Inspiration <span className="italic text-[var(--accent)]">&amp; vision</span>
+            Motivation
           </h2>
         </motion.div>
 
-        {/* Two columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          {/* Left: Texts */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="flex flex-col gap-8"
-          >
-            <p className="text-lg md:text-xl font-light leading-relaxed text-[var(--foreground)]/75">
-              La creativite est le coeur battant du design. Chaque forme que l&apos;on dessine, chaque concept que l&apos;on donne vie est le reflet d&apos;une vision unique. Chaque defi est une occasion d&apos;innover — chaque obstacle, un pas de plus vers la decouverte.
-            </p>
-            <p className="text-base font-light leading-relaxed text-[var(--foreground)]/50">
-              Accepter le processus, faire confiance a son instinct et laisser sa passion guider chaque geste. Le design a le pouvoir d&apos;inspirer et de laisser une empreinte durable. Repousser les limites, rester fidele a sa demarche artistique — c&apos;est la que nait l&apos;extraordinaire.
-            </p>
-          </motion.div>
-
-          {/* Right: Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-            className="flex flex-col justify-center"
-          >
-            <div className="p-8 md:p-10 rounded-lg border border-[var(--foreground)]/10 bg-[var(--surface)] relative">
-              {/* Accent dot */}
-              <div className="absolute -top-2 -left-2 w-4 h-4 rounded-full bg-[var(--accent)]" />
-
-              <blockquote className="text-xl md:text-2xl font-medium leading-snug tracking-tight mb-6">
-                &laquo;&nbsp;Le design ne se limite pas a l&apos;apparence et a la sensation. Le design, c&apos;est aussi le fonctionnement.&nbsp;&raquo;
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-px bg-[var(--accent)]" />
-                <span className="text-xs tracking-[0.2em] uppercase text-[var(--muted)]">Steve Jobs</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+        {/* Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-3xl flex flex-col gap-8"
+        >
+          <p className="text-lg md:text-xl font-light leading-relaxed text-[var(--foreground)]/75">
+            Je suis passionnée par l&apos;univers créatif et stimulant de l&apos;événementiel et des expositions. J&apos;aime imaginer, concevoir, organiser et donner vie à des expériences. Être à la fois sur le terrain et dans la réflexion me permet de transformer une idée en réalité.
+          </p>
+          <p className="text-base font-light leading-relaxed text-[var(--foreground)]/50">
+            Chaque projet est pour moi une occasion de mêler imagination, technique et gestion pour créer des univers uniques et immersifs.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

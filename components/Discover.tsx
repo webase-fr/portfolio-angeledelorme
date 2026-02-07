@@ -11,8 +11,8 @@ const categories = [
     image: "/img/IMG_6313.PNG",
     projects: [
       { name: "Au fil des objets", href: "/projets/au-fil-des-objets" },
-      { name: "Seme-t-elle", href: "/projets/seme-t-elle" },
-      { name: "Eclairer les Sens", href: "/projets/eclairer-les-sens" },
+      { name: "Sème-t-elle", href: "/projets/seme-t-elle" },
+      { name: "Éclairer les Sens", href: "/projets/eclairer-les-sens" },
     ],
   },
   {
@@ -21,16 +21,16 @@ const categories = [
     image: "/img/IMG_6314.PNG",
     projects: [
       { name: "De l'intime au commun", href: "/projets/intime-au-commun" },
+      { name: "Rapport de stage", href: "/projets/rapport-de-stage" },
     ],
   },
   {
     label: "Espaces",
-    subtitle: "Scenographie & Lieu",
+    subtitle: "Scénographie & Lieu",
     image: "/img/IMG_6312.PNG",
     projects: [
       { name: "Posture Quotidienne", href: "/projets/posture-quotidienne" },
       { name: "Chaise de Chair", href: "/projets/chaises-de-chair" },
-      { name: "Rapport de stage", href: "/projets/rapport-de-stage" },
     ],
   },
 ];
@@ -48,13 +48,13 @@ export default function Discover() {
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-20"
         >
           <div>
-            <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Decouvrir</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Découvrir</span>
             <h2 className="text-4xl md:text-6xl font-extralight tracking-tight leading-tight">
               Mes <span className="italic text-[var(--accent)]">projets</span>
             </h2>
           </div>
           <p className="text-sm text-[var(--foreground)]/40 max-w-xs font-light leading-relaxed">
-            Formes, matieres, espaces. Du dessin a la scenographie, chaque projet prend corps.
+            Formes, matières, espaces. Du dessin à la scénographie, chaque projet prend corps.
           </p>
         </motion.div>
 
@@ -71,8 +71,8 @@ export default function Discover() {
             className="group flex items-center justify-between p-5 md:p-6 rounded-lg border border-[var(--accent)]/20 bg-[var(--accent)]/5 hover:bg-[var(--accent)]/10 transition-all duration-300"
           >
             <div className="flex flex-col gap-1">
-              <span className="text-base md:text-lg font-light tracking-tight">Explorez mes realisations</span>
-              <span className="text-xs text-[var(--foreground)]/40">Cliquez pour decouvrir le premier projet</span>
+              <span className="text-base md:text-lg font-light tracking-tight">Explorez mes réalisations</span>
+              <span className="text-xs text-[var(--foreground)]/40">Cliquez pour découvrir le premier projet</span>
             </div>
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <ArrowRight className="w-5 h-5 text-[#E6DCD1]" />

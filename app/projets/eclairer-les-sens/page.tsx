@@ -9,8 +9,8 @@ const TXT = "#2B2119";
 const AMBER = "#D4A574";
 
 const images = [
-  { src: "/img/eclairer-les-sens/dsc-4202.jpeg", alt: "Lampe Eclairer les Sens — vue de face" },
-  { src: "/img/eclairer-les-sens/dsc-4207.jpeg", alt: "Lampe — vue de profil, echantillons de parfum" },
+  { src: "/img/eclairer-les-sens/dsc-4202.jpeg", alt: "Lampe Éclairer les Sens — vue de face" },
+  { src: "/img/eclairer-les-sens/dsc-4207.jpeg", alt: "Lampe — vue de profil, échantillons de parfum" },
   { src: "/img/eclairer-les-sens/dsc-4202-alt.jpg", alt: "Lampe — vue alternative" },
 ];
 
@@ -78,7 +78,7 @@ export default function EclairerLesSens() {
           <ArrowLeft className="w-5 h-5" />
           <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angele Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angèle Delorme</span>
       </header>
 
       <div className="h-24" />
@@ -99,13 +99,13 @@ export default function EclairerLesSens() {
             </div>
 
             <h1 className="text-5xl md:text-[7rem] lg:text-[9rem] font-extralight tracking-tight leading-[0.85]">
-              <span style={{ color: AMBER }}>Eclairer</span>
+              <span style={{ color: AMBER }}>Éclairer</span>
               <br />
               les Sens
             </h1>
 
             <p className="mt-10 md:mt-14 text-sm md:text-base max-w-lg leading-relaxed font-light opacity-50">
-              Upcycling lumineux — echantillons de parfum &amp; bois recupere
+              Upcycling lumineux — échantillons de parfum &amp; bois récupéré
             </p>
           </motion.div>
         </div>
@@ -139,7 +139,7 @@ export default function EclairerLesSens() {
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-4"
           >
-            <span className="text-xs tracking-[0.3em] uppercase opacity-35">A propos</span>
+            <span className="text-xs tracking-[0.3em] uppercase opacity-35">À propos</span>
             <div className="w-10 h-[2px] rounded-full" style={{ backgroundColor: `${AMBER}80` }} />
           </motion.div>
 
@@ -150,13 +150,13 @@ export default function EclairerLesSens() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
-              <span style={{ color: AMBER }} className="italic">Eclairer les Sens</span>{" "}
-              est un projet d&apos;upcycling realise en groupe. Cette lampe, fabriquee a partir
-              d&apos;echantillons de parfums et de bois recupere, transforme des materiaux oublies en experience
+              <span style={{ color: AMBER }} className="italic">Éclairer les Sens</span>{" "}
+              est un projet d&apos;upcycling réalisé en groupe. Cette lampe, fabriquée à partir
+              d&apos;échantillons de parfums et de bois récupéré, transforme des matériaux oubliés en expérience
               lumineuse et sensorielle.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed mt-8 opacity-55">
-              Adaptable a differents espaces, elle cree une atmosphere unique pour
+              Adaptable à différents espaces, elle crée une atmosphère unique pour
               chaque moment.
             </p>
           </motion.div>
@@ -230,8 +230,8 @@ export default function EclairerLesSens() {
 
             <p className="text-lg md:text-2xl font-light leading-relaxed opacity-70">
               Un fanzine essentiellement photographique, capturant des moments
-              saisis sur le vif. Le projet s&apos;inspire des decors deja presents sur le lieu et se construit a travers
-              une mise en forme graphique, reliant images et espace pour creer une narration visuelle.
+              saisis sur le vif. Le projet s&apos;inspire des décors déjà présents sur le lieu et se construit à travers
+              une mise en forme graphique, reliant images et espace pour créer une narration visuelle.
             </p>
           </motion.div>
         </div>
@@ -248,7 +248,7 @@ export default function EclairerLesSens() {
         >
           <Lightbox
             src={images[0].src}
-            alt="Lampe Eclairer les Sens — lumiere"
+            alt="Lampe Éclairer les Sens — lumière"
             className="w-full h-auto max-h-[75vh] object-contain"
             wrapperClassName="rounded-lg"
           />
@@ -266,8 +266,8 @@ export default function EclairerLesSens() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Precedent</span>
-                  <span className="text-base md:text-xl font-light">Seme-t-elle</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
+                  <span className="text-base md:text-xl font-light">Sème-t-elle</span>
                 </div>
               </Link>
 
@@ -289,7 +289,7 @@ export default function EclairerLesSens() {
       {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angele Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angèle Delorme</span>
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: AMBER }} />
             <span className="text-xs opacity-20">2024</span>
