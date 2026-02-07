@@ -1,95 +1,94 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   const diplomas = [
-    { name: "DIPLÔME NATIONAL D'ART - ESAD ORLÉANS", year: "2025", type: "primary" },
-    { name: "MENTION DESIGN D'ESPACE", year: "2025", type: "secondary" },
-    { name: "BACCALAUREAT GENERAL", year: "2022", type: "primary" },
-    { name: "SPECIALITÉ HISTOIRE DE L'ART", year: "2022", type: "secondary" },
+    { name: "Diplome National d'Art — ESAD Orleans", year: "2025" },
+    { name: "Mention Design d'Espace", year: "2025" },
+    { name: "Baccalaureat General", year: "2022" },
+    { name: "Specialite Histoire de l'Art", year: "2022" },
   ];
 
   return (
-    <section className="w-full py-24 px-4 md:px-8" id="about">
+    <section className="w-full py-24 md:py-32 px-6 md:px-10" id="about">
+      <div className="max-w-6xl mx-auto">
+        {/* Section header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-16 md:mb-24"
+        >
+          <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">A propos</span>
+          <h2 className="text-4xl md:text-6xl font-extralight tracking-tight">
+            Qui <span className="italic text-[var(--accent)]">suis-je</span>
+          </h2>
+        </motion.div>
 
-      <div className="w-full max-w-[95%] mx-auto flex flex-col gap-16">
-
-        {/* Header - Sticky under navbar */}
-        <div className="sticky top-[76px] z-40 bg-[#052902] self-start w-full flex justify-between items-start border-b border-white/20 pb-8 pt-8 text-left">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-4xl md:text-5xl font-black uppercase text-white tracking-tighter">A PROPOS</h2>
-            <span className="text-white/60 text-sm font-medium uppercase tracking-wider">QUI SUIS-JE ?</span>
-          </div>
-        </div>
-
-        {/* Grid Layout: Portrait Left / Content Right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start justify-items-center md:items-start text-center md:text-left">
-
-          {/* Left: Large Portrait Image */}
+        {/* Grid: Portrait + Content */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-12 md:gap-20">
+          {/* Portrait */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative w-full aspect-[3/4] md:h-[85vh] rounded-sm overflow-hidden"
+            className="relative aspect-[3/4] rounded-lg overflow-hidden"
           >
-            <img 
-              src="/img/IMG_2277.jpeg" 
-              alt="Portrait Angèle Delorme" 
+            <img
+              src="/img/IMG_2277.jpeg"
+              alt="Portrait Angele Delorme"
               className="w-full h-full object-cover"
             />
           </motion.div>
 
-          {/* Right: Content */}
-          <div className="flex flex-col gap-12 pt-8 w-full items-center md:items-start">
-            {/* Intro */}
-            <div className="flex flex-col gap-6 w-full">
-
-              <div className="space-y-6 text-lg md:text-xl font-medium leading-relaxed text-neutral-200">
-                <p>
-                  Issu d'une licence en design d'espace, complétée par une approche du design d'objet, j'ai développé des compétences solides en conception, création et mise en forme de projets.
-                </p>
-                <p>
-                  Mon travail s'articule autour du design d'espace, de la scénographie et de la conception d'objets, avec une attention particulière portée aux usages, aux volumes et aux matières.
-                </p>
-                <p>
-                  Au fil de mes projets, j'ai exploré différents types de matériaux et de techniques, me permettant d'adapter mes propositions à des contextes variés. J'utilise également les suites de création graphique et 3D pour concevoir des visuels, développer des intentions et donner forme aux projets.
-                </p>
-              </div>
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.15 }}
+            className="flex flex-col gap-10 md:pt-8"
+          >
+            {/* Bio text */}
+            <div className="flex flex-col gap-6">
+              <p className="text-lg md:text-xl font-light leading-relaxed text-[var(--foreground)]/80">
+                Issue d&apos;une licence en design d&apos;espace, completee par une approche du design d&apos;objet, j&apos;ai developpe des competences solides en conception, creation et mise en forme de projets.
+              </p>
+              <p className="text-base font-light leading-relaxed text-[var(--foreground)]/55">
+                Mon travail s&apos;articule autour du design d&apos;espace, de la scenographie et de la conception d&apos;objets, avec une attention particuliere portee aux usages, aux volumes et aux matieres.
+              </p>
+              <p className="text-base font-light leading-relaxed text-[var(--foreground)]/55">
+                Au fil de mes projets, j&apos;ai explore differents types de materiaux et de techniques, me permettant d&apos;adapter mes propositions a des contextes varies. J&apos;utilise egalement les suites de creation graphique et 3D pour concevoir des visuels, developper des intentions et donner forme aux projets.
+              </p>
             </div>
 
             {/* Diplomas */}
-            <div className="flex flex-col gap-4 w-full">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-white/50 mb-2 self-center md:self-start">DIPLÔMES</h4>
-              <div className="flex flex-col border-t border-white/20 w-full">
+            <div>
+              <span className="text-xs tracking-[0.3em] uppercase text-[var(--muted)] block mb-4">Diplomes</span>
+              <div className="flex flex-col">
                 {diplomas.map((dip, idx) => (
                   <div
                     key={idx}
-                    className={`flex justify-between items-center py-4 px-2 border-b border-white/20 transition-colors group cursor-default text-left
-                                  ${dip.type === 'primary' ? 'hover:bg-white hover:text-black' : 'hover:bg-white/10 text-white'}
-                              `}
+                    className="flex justify-between items-center py-3 border-b border-[var(--foreground)]/8 hover:border-[var(--accent)]/30 transition-colors group"
                   >
-                    <span className="font-bold text-xs md:text-sm uppercase tracking-wider">{dip.name}</span>
-                    <div className="flex items-center gap-4">
-                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <span className={`font-mono text-xs font-bold ${dip.type === 'primary' ? 'group-hover:text-black' : ''}`}>{dip.year}</span>
-                    </div>
+                    <span className="text-sm font-light tracking-wide group-hover:text-[var(--accent)] transition-colors">{dip.name}</span>
+                    <span className="text-xs font-mono text-[var(--muted)]">{dip.year}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Objective */}
-            <div className="flex flex-col gap-4 mt-8 w-full text-center md:text-left">
-              <h3 className="text-lg font-bold uppercase tracking-widest text-white mb-2">[ MON OBJECTIF ]</h3>
-              <p className="text-sm md:text-base leading-relaxed text-neutral-200">
-                Aujourd'hui, je souhaite orienter mon parcours vers le domaine de l'événementiel et l'ensemble de ses branches créatives, en mettant le design au service de l'expérience, de l'espace et de la narration.
+            <div className="p-6 rounded-lg border border-[var(--foreground)]/8 bg-[var(--surface)]">
+              <span className="text-xs tracking-[0.3em] uppercase text-[var(--accent)] block mb-3">Mon objectif</span>
+              <p className="text-sm font-light leading-relaxed text-[var(--foreground)]/60">
+                Aujourd&apos;hui, je souhaite orienter mon parcours vers le domaine de l&apos;evenementiel et l&apos;ensemble de ses branches creatives, en mettant le design au service de l&apos;experience, de l&apos;espace et de la narration.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
-
       </div>
     </section>
   );

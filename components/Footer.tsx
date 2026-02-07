@@ -1,61 +1,68 @@
+"use client";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col">
-      {/* Full width image */}
-      <div className="w-full h-[40vh] md:h-screen overflow-hidden">
+    <footer className="w-full flex flex-col" id="contact">
+      {/* Full width image — larger */}
+      <div className="w-full overflow-hidden">
         <img
-          src="/img/bae278e8-0b4f-467d-9209-b08daea32321.jpeg"
-          alt="Gallery"
-          className="w-full h-full object-cover"
+          src="/img/IMG_6289.JPG"
+          alt="Scenographie"
+          className="w-full h-auto min-h-[40vh] md:min-h-[50vh] object-cover"
         />
       </div>
 
-      {/* Image caption */}
-      <div className="w-full px-4 md:px-8 py-4 bg-[#052902]">
-        <p className="text-sm md:text-base font-medium text-white">
-          [ 2024 ] - CONCEPTION DE SCÉNOGRAPHIE À L&apos;ATELIER LAMAIN.
-        </p>
+      {/* Caption */}
+      <div className="w-full px-6 md:px-10 py-4">
+        <span className="text-xs tracking-[0.2em] uppercase text-[var(--foreground)]/30">
+          [ 2024 ] — Conception de scenographie a l&apos;atelier Lamain
+        </span>
       </div>
 
-      {/* Main footer content */}
-      <div className="w-full py-16 md:py-24 px-4 md:px-8 bg-[#052902] flex flex-col items-center">
-        {/* ANGELE. */}
-        <h1 className="text-[15vw] md:text-[12vw] font-black leading-none tracking-tighter uppercase mb-8">
-          ANGELE<span className="text-accent">.</span>
-        </h1>
-
-        {/* Separator line */}
-        <div className="w-full max-w-4xl border-t border-white/20 mb-8"></div>
-
-        {/* Bottom bar: Contact button left, Social links right */}
-        <div className="w-full max-w-4xl flex flex-col md:flex-row justify-between items-start gap-8">
-          {/* Contact button */}
-          <a
-            href="mailto:contact@angeleprops.com"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-medium text-sm hover:bg-white/90 transition-colors"
+      {/* Main footer */}
+      <div className="w-full px-6 md:px-10 py-20 md:py-32">
+        <div className="max-w-6xl mx-auto">
+          {/* Big name */}
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-[14vw] md:text-[10vw] font-extralight leading-none tracking-tight mb-12"
           >
-            Contact
-            <ArrowUpRight className="w-4 h-4" />
-          </a>
+            Angele<span className="text-[var(--accent)]">.</span>
+          </motion.h2>
 
-          {/* Social links */}
-          <div className="flex flex-col gap-2">
+          {/* Separator */}
+          <div className="w-full h-px bg-[var(--foreground)]/10 mb-10" />
+
+          {/* Bottom row */}
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+            {/* Contact button */}
             <a
-              href="#"
-              className="flex items-center justify-between gap-8 text-white hover:text-white/70 transition-colors group"
+              href="mailto:contact@angeleprops.com"
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--foreground)]/15 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#111] transition-all duration-300 text-sm font-light tracking-wide"
             >
-              <span className="text-base">Instagram</span>
-              <ArrowUpRight className="w-4 h-4 opacity-70 group-hover:opacity-100" />
+              Contactez-moi
+              <ArrowUpRight className="w-4 h-4" />
             </a>
-            <a
-              href="#"
-              className="flex items-center justify-between gap-8 text-white hover:text-white/70 transition-colors group"
-            >
-              <span className="text-base">LinkedIn</span>
-              <ArrowUpRight className="w-4 h-4 opacity-70 group-hover:opacity-100" />
-            </a>
+
+            {/* Social + credits */}
+            <div className="flex flex-col gap-6 md:items-end">
+              <div className="flex gap-6">
+                <a href="#" className="text-sm font-light text-[var(--foreground)]/40 hover:text-[var(--accent)] transition-colors flex items-center gap-1.5">
+                  Instagram <ArrowUpRight className="w-3 h-3" />
+                </a>
+                <a href="#" className="text-sm font-light text-[var(--foreground)]/40 hover:text-[var(--accent)] transition-colors flex items-center gap-1.5">
+                  LinkedIn <ArrowUpRight className="w-3 h-3" />
+                </a>
+              </div>
+              <span className="text-[10px] tracking-[0.3em] uppercase text-[var(--foreground)]/15">
+                &copy; 2024 Angele Delorme
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -13,29 +13,26 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 
 export default function Home() {
-  // Simple loading state
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 800);
+    const timer = setTimeout(() => setLoading(false), 600);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-accent selection:text-white flex flex-col">
+    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col">
       <CustomCursor />
-      
+
       <AnimatePresence mode="wait">
         {loading && (
           <motion.div
             key="loader"
-            className="fixed inset-0 z-[100] bg-[#051308] flex items-center justify-center pointer-events-none"
+            className="fixed inset-0 z-[100] bg-[#0a0a0a] flex items-center justify-center pointer-events-none"
             initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
             exit={{
               clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
-              transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] }
+              transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
             }}
           />
         )}
@@ -46,8 +43,8 @@ export default function Home() {
       <div className="flex flex-col w-full">
         <Hero />
         <Discover />
-        <About />
         <FullWidthImage />
+        <About />
         <Motivation />
         <Skills />
         <Experience />

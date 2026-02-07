@@ -1,60 +1,62 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex flex-col justify-center items-center bg-[#052902]">
-      {/* Background Ambience */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#052902] to-[#021001] opacity-80" />
-      </div>
-
-      {/* Main Content Container - Higher and slightly more left */}
-      <div className="relative z-10 flex flex-col items-start min-w-[300px] md:min-w-[600px] -mt-40 md:-mt-48 ml-4 md:-ml-12">
-        {/* The Text Block */}
-        <div className="relative">
-          {/* Orange Circle - Solid orange color */}
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className="absolute top-[25%] right-[-10%] md:right-[-20px] w-12 h-12 md:w-24 md:h-24 bg-[#E63900] rounded-full z-0 transform -translate-y-1/2"
-          />
-
-          <motion.h1
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="text-[12vw] md:text-[8rem] font-bold text-white tracking-tight leading-none relative z-10 font-sans"
-          >
-            PORTFOLIO
-          </motion.h1>
-        </div>
-
-        <motion.p
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
-          className="font-serif italic text-2xl md:text-5xl text-white font-light tracking-wide mt-2 md:mt-0 relative z-10"
-        >
-          DESIGN-EVENEMENTIEL
-        </motion.p>
-      </div>
-
-      {/* Silver Plate Image - Bottom Left - Large and overflowing (hidden on mobile) */}
-      <motion.div
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-        className="hidden md:block absolute bottom-[-35%] left-[-10%] w-[95vh] h-[95vh] z-20"
-      >
+    <section className="relative w-full min-h-screen flex items-end pb-16 md:pb-24 px-6 md:px-10 overflow-hidden">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-0">
         <img
-          src="/img/IMG_6362.PNG"
-          alt="Silver plate"
-          className="w-full h-full object-contain"
+          src="/img/IMG_6289.JPG"
+          alt="Background"
+          className="w-full h-full object-cover object-[30%_center] md:object-center"
         />
-      </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/70 to-[#111111]/30" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
+          className="flex flex-col gap-6"
+        >
+          {/* Small label */}
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-px bg-[var(--accent)]" />
+            <span className="text-xs tracking-[0.3em] uppercase text-[var(--foreground)]/50">
+              Portfolio 2024
+            </span>
+          </div>
+
+          {/* Main title */}
+          <h1 className="text-[12vw] md:text-[7rem] lg:text-[9rem] font-extralight leading-[0.85] tracking-tight">
+            Design
+            <br />
+            <span className="italic font-normal text-[var(--accent)]">Evenementiel</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-sm md:text-base font-light tracking-wide text-[var(--foreground)]/50 max-w-md mt-4">
+            Espace, scenographie &amp; conception d&apos;objets.
+            <br />
+            Du dessin a la realisation.
+          </p>
+
+          {/* CTA Button */}
+          <Link
+            href="/projets/au-fil-des-objets"
+            className="mt-6 inline-flex items-center gap-3 px-7 py-3.5 rounded-full border border-[var(--foreground)]/20 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#111] transition-all duration-300 text-sm font-light tracking-wide w-fit"
+          >
+            Voir mes projets
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
+      </div>
     </section>
   );
 }
