@@ -53,7 +53,7 @@ export default function Header() {
           A propos
         </Link>
         <a
-          href="mailto:contact@angeleprops.com"
+          href="mailto:angeleee.delorme@gmail.com"
           className={`ml-4 px-5 py-2 rounded-full hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#E6DCD1] transition-all duration-300 border ${
             scrolled ? "border-[var(--foreground)]/20" : "border-white/40"
           }`}

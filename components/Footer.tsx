@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             {/* Contact button */}
             <a
-              href="mailto:contact@angeleprops.com"
+              href="mailto:angeleee.delorme@gmail.com"
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--foreground)]/15 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#E6DCD1] transition-all duration-300 text-sm font-light tracking-wide"
             >
               Contactez-moi
@@ -53,20 +53,24 @@ export default function Footer() {
             <div className="flex flex-col gap-6 md:items-end">
               <div className="flex gap-6">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/adlmdesign/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm font-light text-[var(--foreground)]/40 hover:text-[var(--accent)] transition-colors flex items-center gap-1.5"
                 >
                   Instagram <ArrowUpRight className="w-3 h-3" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/ang%C3%A8le-delorme-199379303/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm font-light text-[var(--foreground)]/40 hover:text-[var(--accent)] transition-colors flex items-center gap-1.5"
                 >
                   LinkedIn <ArrowUpRight className="w-3 h-3" />
                 </a>
               </div>
               <span className="text-[10px] tracking-[0.3em] uppercase text-[var(--foreground)]/15">
-                &copy; 2024 Angèle Delorme
+                &copy; 2026 Angèle Delorme
               </span>
             </div>
           </div>
