@@ -10,7 +10,7 @@ const categories = [
     subtitle: "Design & Fabrication",
     image: "/img/IMG_6313.PNG",
     projects: [
-      { name: "Au fil des objets", href: "/projets/au-fil-des-objets" },
+      { name: "Chaise de Chair", href: "/projets/chaises-de-chair" },
       { name: "Sème-t-elle", href: "/projets/seme-t-elle" },
       { name: "Éclairer les Sens", href: "/projets/eclairer-les-sens" },
     ],
@@ -29,8 +29,9 @@ const categories = [
     subtitle: "Scénographie & Lieu",
     image: "/img/IMG_6312.PNG",
     projects: [
+      { name: "Au fil des objets", href: "/projets/au-fil-des-objets" },
       { name: "Posture Quotidienne", href: "/projets/posture-quotidienne" },
-      { name: "Chaise de Chair", href: "/projets/chaises-de-chair" },
+      { name: "Clip Faux Pas", href: "/projets/clip-faux-pas" },
     ],
   },
 ];

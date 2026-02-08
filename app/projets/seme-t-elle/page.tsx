@@ -10,7 +10,7 @@ const GREEN = "#2D8C5A";
 const TERRA = "#D4734E";
 
 const dessins = Array.from({ length: 8 }, (_, i) => ({
-  src: `/img/seme-t-elle/dessin/page-${String(i + 2).padStart(2, "0")}.jpg`,
+  src: `/img/seme-t-elle/dessin/page-${String(9 - i).padStart(2, "0")}.jpg`,
   alt: `Illustration mise en situation ${i + 1}`,
 }));
 
@@ -129,12 +129,10 @@ export default function SemeTElle() {
               <span className="text-xs tracking-[0.25em] uppercase opacity-40">Objet &middot; Design &middot; 2024</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.85]">
-              <span style={{ color: GREEN }}>Sème</span>
-              <span className="opacity-30">-</span>
-              t
-              <span className="opacity-30">-</span>
-              elle
+            <h1 className="text-5xl md:text-[7rem] lg:text-[8.5rem] font-extralight tracking-tight leading-[0.9]">
+              <span style={{ color: GREEN }}>Sème</span>-t-
+              <br />
+              <span className="italic" style={{ color: TERRA }}>elle</span>
             </h1>
 
             <div className="flex items-center gap-4 mt-8">

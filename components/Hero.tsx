@@ -47,7 +47,7 @@ export default function Hero() {
 
           {/* Main title */}
           <h1 className="text-[12vw] md:text-[7rem] lg:text-[9rem] font-extralight leading-[0.85] tracking-tight text-white">
-            Design
+            Design -
             <br />
             <span className="italic font-normal text-white">Événementiel</span>
           </h1>

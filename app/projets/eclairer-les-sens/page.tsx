@@ -207,7 +207,7 @@ export default function EclairerLesSens() {
         />
       </section>
 
-      {/* Section "De l'intime au commun" teaser */}
+      {/* Section approche créative */}
       <section className="w-full px-6 md:px-12 pb-20 md:pb-32">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -219,19 +219,19 @@ export default function EclairerLesSens() {
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: AMBER }} />
-              <span className="text-xs tracking-[0.3em] uppercase opacity-40">Fanzine photographique</span>
+              <span className="text-xs tracking-[0.3em] uppercase opacity-40">Approche créative</span>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-extralight tracking-tight leading-tight mb-10">
-              De l&apos;intime
+              Lumière
               <br />
-              <span className="italic" style={{ color: AMBER }}>au commun</span>
+              <span className="italic" style={{ color: AMBER }}>&amp; matière</span>
             </h2>
 
             <p className="text-lg md:text-2xl font-light leading-relaxed opacity-70">
-              Un fanzine essentiellement photographique, capturant des moments
-              saisis sur le vif. Le projet s&apos;inspire des décors déjà présents sur le lieu et se construit à travers
-              une mise en forme graphique, reliant images et espace pour créer une narration visuelle.
+              Adaptable à différents espaces, cette lampe crée une atmosphère unique pour
+              chaque moment — une invitation à redécouvrir la lumière à travers des matériaux
+              détournés et sublimés.
             </p>
           </motion.div>
         </div>

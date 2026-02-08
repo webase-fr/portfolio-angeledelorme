@@ -9,13 +9,18 @@ const TXT = "#2B2119";
 const AMBER = "#D4943C";
 
 const photos = [
-  { src: "/img/intime-au-commun/IMG_6352.JPG", alt: "Facade laverie — deux silhouettes, nuit" },
-  { src: "/img/intime-au-commun/IMG_6346.JPG", alt: "Jeune homme sur son ordinateur dans la laverie" },
-  { src: "/img/intime-au-commun/IMG_6348.JPG", alt: "Homme appuyé sur une machine à laver" },
-  { src: "/img/intime-au-commun/IMG_6350.JPG", alt: "Femme devant les machines rouges" },
-  { src: "/img/intime-au-commun/IMG_6347.JPG", alt: "Personne chargeant une machine" },
-  { src: "/img/intime-au-commun/IMG_6349.JPG", alt: "Homme discutant près des machines" },
-  { src: "/img/intime-au-commun/IMG_6353.JPG", alt: "Homme mangeant des céréales dans la laverie" },
+  { src: "/img/intime-au-commun/_DSC0010_1.jpg", alt: "Scène dans la laverie — ambiance nocturne" },
+  { src: "/img/intime-au-commun/_DSC0025.JPG", alt: "Portrait dans la laverie" },
+  { src: "/img/intime-au-commun/_DSC0035.jpg", alt: "Moment capturé sur le vif" },
+  { src: "/img/intime-au-commun/_DSC0086.jpg", alt: "Silhouette entre les machines" },
+  { src: "/img/intime-au-commun/_DSC1295.JPG", alt: "Détail — lumière et matière" },
+  { src: "/img/intime-au-commun/_DSC1307.JPEG", alt: "Scène du quotidien" },
+  { src: "/img/intime-au-commun/_DSC1334.JPEG", alt: "Instant suspendu" },
+  { src: "/img/intime-au-commun/_DSC1356_1.jpg", alt: "Rencontre dans l'espace commun" },
+  { src: "/img/intime-au-commun/_DSC1357.JPG", alt: "Atmosphère intime" },
+  { src: "/img/intime-au-commun/_DSC1375_1.JPG", alt: "Regard et lumière" },
+  { src: "/img/intime-au-commun/_DSC1384.jpg", alt: "Composition visuelle" },
+  { src: "/img/intime-au-commun/_DSC1389.JPG", alt: "Narration photographique" },
   { src: "/img/intime-au-commun/IMG_6354.JPG", alt: "Fanzine — couvertures LAVERIE" },
 ];
 
@@ -157,127 +162,72 @@ export default function IntimeAuCommun() {
         </div>
       </section>
 
-      {/* Grille de photos */}
+      {/* Grille de photos — duo */}
       <section className="w-full px-6 md:px-12 py-4">
         <div className="max-w-5xl mx-auto">
-          {/* Row 1 */}
+          {/* Duo 1 */}
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <Lightbox
-                src={photos[1].src}
-                alt={photos[1].alt}
-                className="w-full h-full object-cover"
-                wrapperClassName="rounded-md aspect-[3/4]"
-              />
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <Lightbox src={photos[1].src} alt={photos[1].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <Lightbox
-                src={photos[2].src}
-                alt={photos[2].alt}
-                className="w-full h-full object-cover"
-                wrapperClassName="rounded-md aspect-[3/4]"
-              />
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }}>
+              <Lightbox src={photos[2].src} alt={photos[2].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
             </motion.div>
           </div>
 
-          {/* Row 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-4"
-          >
-            <Lightbox
-              src={photos[3].src}
-              alt={photos[3].alt}
-              className="w-full h-full object-cover"
-              wrapperClassName="rounded-md aspect-[3/4] md:aspect-[16/9]"
-            />
-          </motion.div>
-
-          {/* Row 3 */}
+          {/* Duo 2 */}
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <Lightbox
-                src={photos[4].src}
-                alt={photos[4].alt}
-                className="w-full h-full object-cover"
-                wrapperClassName="rounded-md aspect-[3/4]"
-              />
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <Lightbox src={photos[3].src} alt={photos[3].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <Lightbox
-                src={photos[5].src}
-                alt={photos[5].alt}
-                className="w-full h-full object-cover"
-                wrapperClassName="rounded-md aspect-[3/4]"
-              />
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }}>
+              <Lightbox src={photos[4].src} alt={photos[4].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
             </motion.div>
           </div>
 
-          {/* Row 4 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-4"
-          >
-            <Lightbox
-              src={photos[6].src}
-              alt={photos[6].alt}
-              className="w-full h-full object-cover"
-              wrapperClassName="rounded-md aspect-[3/4] md:aspect-[16/9]"
-            />
-          </motion.div>
+          {/* Duo 3 */}
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <Lightbox src={photos[5].src} alt={photos[5].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }}>
+              <Lightbox src={photos[6].src} alt={photos[6].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+          </div>
+
+          {/* Duo 4 */}
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <Lightbox src={photos[7].src} alt={photos[7].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }}>
+              <Lightbox src={photos[8].src} alt={photos[8].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+          </div>
+
+          {/* Trio */}
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <Lightbox src={photos[9].src} alt={photos[9].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.08 }}>
+              <Lightbox src={photos[10].src} alt={photos[10].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.16 }}>
+              <Lightbox src={photos[11].src} alt={photos[11].alt} className="w-full h-full object-cover" wrapperClassName="rounded-md aspect-[3/4]" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Fanzine */}
       <section className="w-full px-6 md:px-12 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-8"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
             <span className="text-xs tracking-[0.3em] uppercase opacity-35">Le fanzine</span>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <Lightbox
-              src={photos[7].src}
-              alt={photos[7].alt}
-              className="w-full h-auto"
-              wrapperClassName="rounded-md"
-            />
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+            <Lightbox src={photos[12].src} alt={photos[12].alt} className="w-full h-auto" wrapperClassName="rounded-md" />
           </motion.div>
         </div>
       </section>
