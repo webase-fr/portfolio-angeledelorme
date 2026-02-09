@@ -6,6 +6,16 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 const categories = [
   {
+    label: "Espaces",
+    subtitle: "Scénographie & Lieu",
+    image: "/img/IMG_6312.PNG",
+    projects: [
+      { name: "Au fil des objets", href: "/projets/au-fil-des-objets" },
+      { name: "Posture Quotidienne", href: "/projets/posture-quotidienne" },
+      { name: "Clip Faux Pas", href: "/projets/clip-faux-pas" },
+    ],
+  },
+  {
     label: "Objets",
     subtitle: "Design & Fabrication",
     image: "/img/IMG_6313.PNG",
@@ -22,16 +32,6 @@ const categories = [
     projects: [
       { name: "De l'intime au commun", href: "/projets/intime-au-commun" },
       { name: "Rapport de stage", href: "/projets/rapport-de-stage" },
-    ],
-  },
-  {
-    label: "Espaces",
-    subtitle: "Scénographie & Lieu",
-    image: "/img/IMG_6312.PNG",
-    projects: [
-      { name: "Au fil des objets", href: "/projets/au-fil-des-objets" },
-      { name: "Posture Quotidienne", href: "/projets/posture-quotidienne" },
-      { name: "Clip Faux Pas", href: "/projets/clip-faux-pas" },
     ],
   },
 ];

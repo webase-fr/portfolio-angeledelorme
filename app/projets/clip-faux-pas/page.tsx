@@ -130,7 +130,7 @@ export default function ClipFauxPas() {
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: RED }} />
                 <span className="text-xs tracking-[0.3em] uppercase opacity-50">
-                  Espace &middot; Scénographie &middot; 2025
+                  Direction décor : Scénographie
                 </span>
               </div>
               <h1 className="text-5xl md:text-[7rem] lg:text-[8.5rem] font-extralight tracking-tight leading-[0.9]">

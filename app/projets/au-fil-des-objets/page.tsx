@@ -8,8 +8,8 @@ const BG = "#E6DCD1";
 const TXT = "#2B2119";
 const ACCENT = "#C03A2B";
 
-const tramPages = Array.from({ length: 20 }, (_, i) => ({
-  src: `/img/au-fils-des-objets/tram/IMG_${6455 + i}.PNG`,
+const tramPages = Array.from({ length: 22 }, (_, i) => ({
+  src: `/img/au-fils-des-objets/tram/IMG_${6507 + i}.PNG`,
   alt: `Page ${i + 1}`,
 }));
 

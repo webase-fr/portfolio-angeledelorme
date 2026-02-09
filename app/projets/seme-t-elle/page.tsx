@@ -126,7 +126,7 @@ export default function SemeTElle() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full" style={{ backgroundColor: GREEN }} />
-              <span className="text-xs tracking-[0.25em] uppercase opacity-40">Objet &middot; Design &middot; 2024</span>
+              <span className="text-xs tracking-[0.25em] uppercase opacity-40">Objet &middot; Design &middot; 2024-2026</span>
             </div>
 
             <h1 className="text-5xl md:text-[7rem] lg:text-[8.5rem] font-extralight tracking-tight leading-[0.9]">
@@ -382,7 +382,7 @@ export default function SemeTElle() {
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: GREEN }} />
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TERRA }} />
-            <span className="text-xs opacity-20 ml-1">2024</span>
+            <span className="text-xs opacity-20 ml-1">2024-2026</span>
           </div>
         </div>
       </footer>
