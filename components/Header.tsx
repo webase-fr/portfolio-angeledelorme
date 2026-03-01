@@ -19,15 +19,15 @@ export default function Header() {
     >
       <Link href="/" className="flex items-center gap-3">
         <span
-          className={`text-lg md:text-xl font-light tracking-[0.15em] uppercase transition-colors duration-500 ${
+          className={`text-[1.35rem] md:text-[1.5rem] font-light tracking-[0.15em] uppercase transition-colors duration-500 ${
             scrolled ? "text-[var(--foreground)]" : "text-white"
           }`}
         >
           Angèle
         </span>
-        <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
+        <span className="w-2 h-2 rounded-full bg-[var(--accent)]" />
         <span
-          className={`text-lg md:text-xl font-light tracking-[0.15em] uppercase transition-colors duration-500 ${
+          className={`text-[1.35rem] md:text-[1.5rem] font-light tracking-[0.15em] uppercase transition-colors duration-500 ${
             scrolled ? "text-[var(--foreground)]" : "text-white"
           }`}
         >
@@ -53,7 +53,7 @@ export default function Header() {
           A propos
         </Link>
         <a
-          href="mailto:angeleee.delorme@gmail.com"
+          href="mailto:angeledlm.pro@gmail.com"
           className={`ml-4 px-5 py-2 rounded-full hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#E6DCD1] transition-all duration-300 border ${
             scrolled ? "border-[var(--foreground)]/20" : "border-white/40"
           }`}

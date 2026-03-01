@@ -130,7 +130,7 @@ export default function ClipFauxPas() {
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: RED }} />
                 <span className="text-xs tracking-[0.3em] uppercase opacity-50">
-                  Direction décor : Scénographie
+                  Direction décor : Scénographie &middot; 2026
                 </span>
               </div>
               <h1 className="text-5xl md:text-[7rem] lg:text-[8.5rem] font-extralight tracking-tight leading-[0.9]">
@@ -167,9 +167,7 @@ export default function ClipFauxPas() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
-              Dans le cadre du tournage d&apos;un clip musical, j&apos;ai assuré la{" "}
-              <span className="italic" style={{ color: RED }}>direction décor</span> avec une thématique
-              centrée sur les années 30.
+              Dans le cadre du tournage d&apos;un clip musical, j&apos;ai pu imaginer la scénographie avec une thématique centrée sur les années 30.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed mt-8 opacity-55">
               Mon travail a débuté par une phase de recherche iconographique et
@@ -315,13 +313,22 @@ export default function ClipFauxPas() {
         </div>
       </section>
 
+      {/* Sortie clip */}
+      <section className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-sm md:text-base font-light opacity-50">
+            Sortie en mars prochain du clip vidéo / lien à venir
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angèle Delorme</span>
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: RED }} />
-            <span className="text-xs opacity-20">2025</span>
+            <span className="text-xs opacity-20">2026</span>
           </div>
         </div>
       </footer>

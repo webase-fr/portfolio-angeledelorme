@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             {/* Contact button */}
             <a
-              href="mailto:angeleee.delorme@gmail.com"
+              href="mailto:angeledlm.pro@gmail.com"
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--foreground)]/15 hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-[#E6DCD1] transition-all duration-300 text-sm font-light tracking-wide"
             >
               Contactez-moi

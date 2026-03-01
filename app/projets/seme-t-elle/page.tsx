@@ -208,6 +208,52 @@ export default function SemeTElle() {
         </div>
       </section>
 
+      {/* Nouvelles photos — objet en situation */}
+      <section className="w-full px-6 md:px-12 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-10"
+          >
+            <span className="text-xs tracking-[0.3em] uppercase opacity-35 block mb-2">Objet en situation</span>
+            <div className="w-12 h-[2px] rounded-full" style={{ backgroundColor: `${GREEN}60` }} />
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="rounded-lg overflow-hidden bg-[var(--surface)]"
+            >
+              <Lightbox
+                src="/img/seme-t-elle/IMG_6531.JPG"
+                alt="Sème-t-elle — objet flexible et canal à graines, détail"
+                className="w-full h-full object-cover"
+                wrapperClassName="block aspect-[4/3] w-full"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="rounded-lg overflow-hidden bg-[var(--surface)]"
+            >
+              <Lightbox
+                src="/img/seme-t-elle/IMG_8397.jpg"
+                alt="Sème-t-elle — détail et mise en situation"
+                className="w-full h-full object-cover object-[center_60%]"
+                wrapperClassName="block aspect-[4/3] w-full"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Texte descriptif */}
       <section className="w-full px-6 md:px-12 py-20 md:py-32">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-start">

@@ -9,18 +9,39 @@ const TXT = "#2B2119";
 const AMBER = "#D4A574";
 
 const images = [
-  { src: "/img/eclairer-les-sens/dsc-4202.jpeg", alt: "Lampe Éclairer les Sens — vue de face" },
-  { src: "/img/eclairer-les-sens/dsc-4207.jpeg", alt: "Lampe — vue de profil, échantillons de parfum" },
-  { src: "/img/eclairer-les-sens/dsc-4202-alt.jpg", alt: "Lampe — vue alternative" },
+  {
+    src: "/img/eclairer-les-sens/dsc-4202.jpeg",
+    alt: "Lampe Éclairer les Sens — vue de face",
+  },
+  {
+    src: "/img/eclairer-les-sens/dsc-4207.jpeg",
+    alt: "Lampe — vue de profil, échantillons de parfum",
+  },
+  {
+    src: "/img/eclairer-les-sens/dsc-4202-alt.jpg",
+    alt: "Lampe — vue alternative",
+  },
 ];
 
-function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt: string; className?: string; wrapperClassName?: string }) {
+function Lightbox({
+  src,
+  alt,
+  className,
+  wrapperClassName,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  wrapperClassName?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   return (
@@ -47,7 +68,10 @@ function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt:
             className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
             onClick={() => setOpen(false)}
           >
-            <button onClick={() => setOpen(false)} className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10">
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10"
+            >
               <X className="w-8 h-8" />
             </button>
             <motion.img
@@ -68,17 +92,27 @@ function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt:
 
 export default function EclairerLesSens() {
   return (
-    <main className="min-h-screen flex flex-col" style={{ backgroundColor: BG, color: TXT }}>
+    <main
+      className="min-h-screen flex flex-col"
+      style={{ backgroundColor: BG, color: TXT }}
+    >
       {/* Header */}
       <header
         className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 backdrop-blur-md"
         style={{ backgroundColor: `${BG}cc` }}
       >
-        <Link href="/" className="flex items-center gap-3 hover:opacity-60 transition-opacity">
+        <Link
+          href="/"
+          className="flex items-center gap-3 hover:opacity-60 transition-opacity"
+        >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
+          <span className="text-sm font-medium tracking-wider uppercase">
+            Retour
+          </span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-25">Angèle Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-25">
+          Angèle Delorme
+        </span>
       </header>
 
       <div className="h-24" />
@@ -92,9 +126,12 @@ export default function EclairerLesSens() {
             transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: AMBER }} />
+              <div
+                className="w-2.5 h-2.5 rounded-full"
+                style={{ backgroundColor: AMBER }}
+              />
               <span className="text-xs tracking-[0.3em] uppercase opacity-40">
-                Objet &middot; Upcycling &middot; 2024
+                Objet &middot; Upcycling &middot; 2023
               </span>
             </div>
 
@@ -139,8 +176,13 @@ export default function EclairerLesSens() {
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-4"
           >
-            <span className="text-xs tracking-[0.3em] uppercase opacity-35">À propos</span>
-            <div className="w-10 h-[2px] rounded-full" style={{ backgroundColor: `${AMBER}80` }} />
+            <span className="text-xs tracking-[0.3em] uppercase opacity-35">
+              À propos
+            </span>
+            <div
+              className="w-10 h-[2px] rounded-full"
+              style={{ backgroundColor: `${AMBER}80` }}
+            />
           </motion.div>
 
           <motion.div
@@ -150,14 +192,17 @@ export default function EclairerLesSens() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
-              <span style={{ color: AMBER }} className="italic">Éclairer les Sens</span>{" "}
-              est un projet d&apos;upcycling réalisé en groupe. Cette lampe, fabriquée à partir
-              d&apos;échantillons de parfums et de bois récupéré, transforme des matériaux oubliés en expérience
-              lumineuse et sensorielle.
+              <span style={{ color: AMBER }} className="italic">
+                Éclairer les Sens
+              </span>{" "}
+              est un projet d&apos;upcycling réalisé en groupe. Cette lampe,
+              fabriquée à partir d&apos;échantillons de parfums et de bois
+              récupéré, transforme des matériaux oubliés en expérience lumineuse
+              et sensorielle.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed mt-8 opacity-55">
-              Adaptable à différents espaces, elle crée une atmosphère unique pour
-              chaque moment.
+              Adaptable à différents espaces, elle crée une atmosphère unique
+              pour chaque moment.
             </p>
           </motion.div>
         </div>
@@ -203,7 +248,9 @@ export default function EclairerLesSens() {
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-32 md:w-48 h-[1px]"
-          style={{ background: `linear-gradient(90deg, transparent, ${AMBER}, transparent)` }}
+          style={{
+            background: `linear-gradient(90deg, transparent, ${AMBER}, transparent)`,
+          }}
         />
       </section>
 
@@ -218,20 +265,27 @@ export default function EclairerLesSens() {
             className="max-w-3xl"
           >
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: AMBER }} />
-              <span className="text-xs tracking-[0.3em] uppercase opacity-40">Approche créative</span>
+              <div
+                className="w-2.5 h-2.5 rounded-full"
+                style={{ backgroundColor: AMBER }}
+              />
+              <span className="text-xs tracking-[0.3em] uppercase opacity-40">
+                Approche créative
+              </span>
             </div>
 
             <h2 className="text-3xl md:text-5xl font-extralight tracking-tight leading-tight mb-10">
               Lumière
               <br />
-              <span className="italic" style={{ color: AMBER }}>&amp; matière</span>
+              <span className="italic" style={{ color: AMBER }}>
+                &amp; matière
+              </span>
             </h2>
 
             <p className="text-lg md:text-2xl font-light leading-relaxed opacity-70">
-              Adaptable à différents espaces, cette lampe crée une atmosphère unique pour
-              chaque moment — une invitation à redécouvrir la lumière à travers des matériaux
-              détournés et sublimés.
+              Adaptable à différents espaces, cette lampe crée une atmosphère
+              unique pour chaque moment — une invitation à redécouvrir la
+              lumière à travers des matériaux détournés et sublimés.
             </p>
           </motion.div>
         </div>
@@ -266,8 +320,12 @@ export default function EclairerLesSens() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
-                  <span className="text-base md:text-xl font-light">Sème-t-elle</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
+                    Précédent
+                  </span>
+                  <span className="text-base md:text-xl font-light">
+                    Sème-t-elle
+                  </span>
                 </div>
               </Link>
 
@@ -276,8 +334,12 @@ export default function EclairerLesSens() {
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Suivant</span>
-                  <span className="text-base md:text-xl font-light">De l&apos;intime au commun</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
+                    Suivant
+                  </span>
+                  <span className="text-base md:text-xl font-light">
+                    De l&apos;intime au commun
+                  </span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />
               </Link>
@@ -287,12 +349,20 @@ export default function EclairerLesSens() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full px-6 md:px-12 py-8" style={{ borderTop: `1px solid ${TXT}08` }}>
+      <footer
+        className="w-full px-6 md:px-12 py-8"
+        style={{ borderTop: `1px solid ${TXT}08` }}
+      >
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-20">Angèle Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-20">
+            Angèle Delorme
+          </span>
           <div className="flex items-center gap-3">
-            <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: AMBER }} />
-            <span className="text-xs opacity-20">2024</span>
+            <div
+              className="w-1.5 h-1.5 rounded-full"
+              style={{ backgroundColor: AMBER }}
+            />
+            <span className="text-xs opacity-20">2023</span>
           </div>
         </div>
       </footer>

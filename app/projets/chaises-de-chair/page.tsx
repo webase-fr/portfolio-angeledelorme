@@ -11,25 +11,52 @@ import { useState, useEffect } from "react";
    Accent      : the red stitching thread   #C03A2B
    ───────────────────────────────────────────────────────── */
 
-const BG  = "#E6DCD1";
+const BG = "#E6DCD1";
 const TXT = "#2B2119";
 const RED = "#C03A2B";
 
 const images = [
-  { src: "/img/chaises-de-chair/img-0581.jpg", alt: "Vue d'ensemble — trois chaises dans l'espace d'exposition" },
-  { src: "/img/chaises-de-chair/dsc-4235.jpg", alt: "Détail — fil rouge cousu dans l'assise" },
-  { src: "/img/chaises-de-chair/dsc-4234.jpg", alt: "Détail — bonbons, confettis et pièce métallique" },
-  { src: "/img/chaises-de-chair/dsc-4230.jpg", alt: "Détail — pièce métallique sur l'assise" },
-  { src: "/img/chaises-de-chair/img-0589.jpg", alt: "Vue de profil — les trois chaises alignées" },
+  {
+    src: "/img/chaises-de-chair/img-0581.jpg",
+    alt: "Vue d'ensemble — trois chaises dans l'espace d'exposition",
+  },
+  {
+    src: "/img/chaises-de-chair/dsc-4235.jpg",
+    alt: "Détail — fil rouge cousu dans l'assise",
+  },
+  {
+    src: "/img/chaises-de-chair/dsc-4234.jpg",
+    alt: "Détail — bonbons, confettis et pièce métallique",
+  },
+  {
+    src: "/img/chaises-de-chair/dsc-4230.jpg",
+    alt: "Détail — pièce métallique sur l'assise",
+  },
+  {
+    src: "/img/chaises-de-chair/img-0589.jpg",
+    alt: "Vue de profil — les trois chaises alignées",
+  },
 ];
 
-function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt: string; className?: string; wrapperClassName?: string }) {
+function Lightbox({
+  src,
+  alt,
+  className,
+  wrapperClassName,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  wrapperClassName?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   return (
@@ -56,7 +83,10 @@ function Lightbox({ src, alt, className, wrapperClassName }: { src: string; alt:
             className="fixed inset-0 z-[200] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
             onClick={() => setOpen(false)}
           >
-            <button onClick={() => setOpen(false)} className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10">
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10"
+            >
               <X className="w-8 h-8" />
             </button>
             <motion.img
@@ -86,11 +116,18 @@ export default function ChaisesDeChair() {
         className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6"
         style={{ backgroundColor: `${BG}cc` }}
       >
-        <Link href="/" className="flex items-center gap-3 hover:opacity-60 transition-opacity">
+        <Link
+          href="/"
+          className="flex items-center gap-3 hover:opacity-60 transition-opacity"
+        >
           <ArrowLeft className="w-5 h-5" />
-          <span className="text-sm font-medium tracking-wider uppercase">Retour</span>
+          <span className="text-sm font-medium tracking-wider uppercase">
+            Retour
+          </span>
         </Link>
-        <span className="text-xs tracking-[0.3em] uppercase opacity-30">Angèle Delorme</span>
+        <span className="text-xs tracking-[0.3em] uppercase opacity-30">
+          Angèle Delorme
+        </span>
       </header>
 
       <div className="h-24" />
@@ -105,17 +142,23 @@ export default function ChaisesDeChair() {
           >
             {/* Metadata */}
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-xs tracking-[0.2em] uppercase opacity-40">Objet</span>
+              <span className="text-xs tracking-[0.2em] uppercase opacity-40">
+                Objet
+              </span>
               <span
                 className="w-2 h-2 rounded-full"
                 style={{ backgroundColor: RED }}
               />
-              <span className="text-xs tracking-[0.2em] uppercase opacity-40">Exposition</span>
+              <span className="text-xs tracking-[0.2em] uppercase opacity-40">
+                Exposition
+              </span>
               <span
                 className="w-2 h-2 rounded-full"
                 style={{ backgroundColor: RED }}
               />
-              <span className="text-xs tracking-[0.2em] uppercase opacity-40">2024</span>
+              <span className="text-xs tracking-[0.2em] uppercase opacity-40">
+                2025
+              </span>
             </div>
 
             {/* Title */}
@@ -169,7 +212,9 @@ export default function ChaisesDeChair() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-start gap-3"
           >
-            <span className="text-xs tracking-[0.3em] uppercase opacity-40">Propos</span>
+            <span className="text-xs tracking-[0.3em] uppercase opacity-40">
+              Propos
+            </span>
             <div
               className="w-[2px] h-12 hidden md:block"
               style={{ backgroundColor: `${RED}40` }}
@@ -183,14 +228,18 @@ export default function ChaisesDeChair() {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <p className="text-xl md:text-3xl font-light leading-relaxed opacity-80">
-              <span className="italic" style={{ color: RED }}>Chaise de Chair</span>{" "}
-              est un projet conçu pour une exposition à la demande du Planning Familial
-              d&apos;Orléans. Né d&apos;échanges avec des femmes excisées, il vise à mettre en lumière leur vécu et
-              sensibiliser sur ce sujet.
+              <span className="italic" style={{ color: RED }}>
+                Chaise de Chair
+              </span>{" "}
+              est un projet conçu pour une exposition à la demande du Planning
+              Familial d&apos;Orléans. Né d&apos;échanges avec des femmes
+              excisées, il vise à mettre en lumière leur vécu et sensibiliser
+              sur ce sujet.
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed opacity-50 mt-8">
-              Nous avons participé à l&apos;organisation de l&apos;exposition et présenté notre
-              travail à un public ouvert à tous, offrant ainsi une expérience accessible et engagée.
+              Nous avons participé à l&apos;organisation de l&apos;exposition et
+              présenté notre travail à un public ouvert à tous, offrant ainsi
+              une expérience accessible et engagée.
             </p>
           </motion.div>
         </div>
@@ -249,7 +298,10 @@ export default function ChaisesDeChair() {
             <blockquote className="text-2xl md:text-4xl font-extralight leading-snug italic opacity-70">
               &laquo;&nbsp;Trois chaises, trois vécus, trois témoignages.
               <br />
-              <span className="not-italic font-normal" style={{ color: RED }}>Le bois brut</span> porte la marque de ce qui ne se dit pas toujours.&nbsp;&raquo;
+              <span className="not-italic font-normal" style={{ color: RED }}>
+                Le bois brut
+              </span>{" "}
+              porte la marque de ce qui ne se voit pas toujours.&nbsp;&raquo;
             </blockquote>
           </motion.div>
         </div>
@@ -293,10 +345,7 @@ export default function ChaisesDeChair() {
       {/* ─ Navigation entre projets */}
       <section className="w-full px-6 md:px-12 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
-          <div
-            className="pt-12"
-            style={{ borderTop: `1px solid ${TXT}15` }}
-          >
+          <div className="pt-12" style={{ borderTop: `1px solid ${TXT}15` }}>
             <div className="flex justify-between items-center">
               <Link
                 href="/projets/posture-quotidienne"
@@ -304,8 +353,12 @@ export default function ChaisesDeChair() {
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
-                  <span className="text-base md:text-xl font-light">Posture Quotidienne</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
+                    Précédent
+                  </span>
+                  <span className="text-base md:text-xl font-light">
+                    Posture Quotidienne
+                  </span>
                 </div>
               </Link>
 
@@ -314,8 +367,12 @@ export default function ChaisesDeChair() {
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Suivant</span>
-                  <span className="text-base md:text-xl font-light">Rapport de stage</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
+                    Suivant
+                  </span>
+                  <span className="text-base md:text-xl font-light">
+                    Rapport de stage
+                  </span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />
               </Link>
@@ -330,13 +387,15 @@ export default function ChaisesDeChair() {
         style={{ borderTop: `1px solid ${TXT}10` }}
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <span className="text-xs tracking-[0.2em] uppercase opacity-25">Angèle Delorme</span>
+          <span className="text-xs tracking-[0.2em] uppercase opacity-25">
+            Angèle Delorme
+          </span>
           <div className="flex items-center gap-3">
             <div
               className="w-1.5 h-1.5 rounded-full"
               style={{ backgroundColor: RED }}
             />
-            <span className="text-xs opacity-25">2024</span>
+            <span className="text-xs opacity-25">2025</span>
           </div>
         </div>
       </footer>
