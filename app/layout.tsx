@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FaviconSwitcher } from "./FaviconSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable}`}
       style={{ colorScheme: "light" }}
     >
-      <body className="antialiased font-sans bg-[#E6DCD1] text-[#2B2119]">
+      <body className="antialiased font-sans bg-background text-foreground">
+        <FaviconSwitcher />
         {children}
       </body>
     </html>
