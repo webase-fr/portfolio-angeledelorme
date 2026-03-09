@@ -386,7 +386,7 @@ export default function AuFilDesObjets() {
               </Link>
 
               <Link
-                href="/projets/seme-t-elle"
+                href="/projets/posture-quotidienne"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
@@ -394,7 +394,7 @@ export default function AuFilDesObjets() {
                     Suivant
                   </span>
                   <span className="text-base md:text-xl font-light">
-                    Sème-t-elle
+                    Posture Quotidienne
                   </span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />

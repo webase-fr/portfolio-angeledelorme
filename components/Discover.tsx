@@ -67,18 +67,35 @@ export default function Discover() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <Link
-            href="/projets/au-fil-des-objets"
-            className="group flex items-center justify-between p-5 md:p-6 rounded-lg border border-[var(--accent)]/20 bg-[var(--accent)]/5 hover:bg-[var(--accent)]/10 transition-all duration-300"
-          >
-            <div className="flex flex-col gap-1">
-              <span className="text-base md:text-lg font-light tracking-tight">Explorez mes réalisations</span>
-              <span className="text-xs text-[var(--foreground)]/40">Cliquez pour découvrir le premier projet</span>
+          <div className="group flex items-center justify-between p-5 md:p-6 rounded-lg border border-[var(--accent)]/20 bg-[var(--accent)]/5 hover:bg-[var(--accent)]/10 transition-all duration-300">
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                <Link
+                  href="/projets/au-fil-des-objets"
+                  className="text-base md:text-lg font-light tracking-tight hover:text-[var(--accent)] transition-colors"
+                >
+                  Explorez mes réalisations
+                </Link>
+                <span className="text-[var(--foreground)]/30 font-light select-none">—</span>
+                <a
+                  href="/portfolio"
+                  className="inline-flex items-center gap-1.5 text-base md:text-lg font-light tracking-tight text-[var(--accent)] underline underline-offset-4 decoration-[var(--accent)]/50 hover:decoration-[var(--accent)] transition-all"
+                >
+                  Portfolio PDF
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
+                </a>
+              </div>
+              <span className="text-xs text-[var(--foreground)]/40">
+                Cliquez pour découvrir le premier projet
+              </span>
             </div>
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Link
+              href="/projets/au-fil-des-objets"
+              className="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+            >
               <ArrowRight className="w-5 h-5 text-[#E6DCD1]" />
-            </div>
-          </Link>
+            </Link>
+          </div>
         </motion.div>
 
         {/* Categories grid */}
@@ -92,14 +109,17 @@ export default function Discover() {
               transition={{ duration: 0.7, delay: index * 0.15 }}
               className="group flex flex-col"
             >
-              {/* Image — full visible, smaller inside card */}
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-5 bg-[var(--surface)] flex items-center justify-center p-6">
+              {/* Image — clique vers le premier projet de la catégorie */}
+              <Link
+                href={cat.projects[0].href}
+                className="relative aspect-[4/3] rounded-lg overflow-hidden mb-5 bg-[var(--surface)] flex items-center justify-center p-6"
+              >
                 <img
                   src={cat.image}
                   alt={cat.label}
                   className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
-              </div>
+              </Link>
 
               {/* Label + subtitle — below image */}
               <div className="mb-4">

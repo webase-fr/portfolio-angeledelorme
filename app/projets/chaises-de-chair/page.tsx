@@ -348,7 +348,7 @@ export default function ChaisesDeChair() {
           <div className="pt-12" style={{ borderTop: `1px solid ${TXT}15` }}>
             <div className="flex justify-between items-center">
               <Link
-                href="/projets/posture-quotidienne"
+                href="/projets/clip-faux-pas"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
@@ -357,13 +357,13 @@ export default function ChaisesDeChair() {
                     Précédent
                   </span>
                   <span className="text-base md:text-xl font-light">
-                    Posture Quotidienne
+                    Clip Faux Pas
                   </span>
                 </div>
               </Link>
 
               <Link
-                href="/projets/rapport-de-stage"
+                href="/projets/seme-t-elle"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
@@ -371,7 +371,7 @@ export default function ChaisesDeChair() {
                     Suivant
                   </span>
                   <span className="text-base md:text-xl font-light">
-                    Rapport de stage
+                    Sème-t-elle
                   </span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />

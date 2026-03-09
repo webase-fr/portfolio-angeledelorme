@@ -384,31 +384,23 @@ export default function PostureQuotidienne() {
           <div className="pt-12" style={{ borderTop: `1px solid ${TXT}15` }}>
             <div className="flex justify-between items-center">
               <Link
-                href="/projets/intime-au-commun"
+                href="/projets/au-fil-des-objets"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10 group-hover:-translate-x-2 transition-transform" />
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
-                    Précédent
-                  </span>
-                  <span className="text-base md:text-xl font-light">
-                    De l&apos;intime au commun
-                  </span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Précédent</span>
+                  <span className="text-base md:text-xl font-light">Au fil des objets</span>
                 </div>
               </Link>
 
               <Link
-                href="/projets/chaises-de-chair"
+                href="/projets/clip-faux-pas"
                 className="group flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity text-right"
               >
                 <div className="flex flex-col">
-                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">
-                    Suivant
-                  </span>
-                  <span className="text-base md:text-xl font-light">
-                    Chaise de Chair
-                  </span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] opacity-50">Suivant</span>
+                  <span className="text-base md:text-xl font-light">Clip Faux Pas</span>
                 </div>
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-2 transition-transform" />
               </Link>
