@@ -238,8 +238,11 @@ export default function ChaisesDeChair() {
             </p>
             <p className="text-base md:text-lg font-light leading-relaxed opacity-50 mt-8">
               Nous avons participé à l&apos;organisation de l&apos;exposition et
-              présenté notre travail à un public ouvert à tous, offrant ainsi
-              une expérience accessible et engagée.
+              présenté chacun notre travail à un public ouvert à tous, offrant
+              ainsi une expérience accessible et engagée. Cette exposition a
+              vocation à être reconduite au fil des années, comme ce fut le cas
+              en février 2026, afin de continuer à porter et revendiquer la
+              parole des femmes.
             </p>
           </motion.div>
         </div>
@@ -340,6 +343,68 @@ export default function ChaisesDeChair() {
             className="w-full h-auto md:h-[80vh] object-cover"
           />
         </motion.div>
+      </section>
+
+      {/* ─ Section expo engagée */}
+      <section className="w-full px-6 md:px-12 py-12 md:py-20">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start"
+          >
+            {/* Affiche */}
+            <div className="w-full">
+              <img
+                src="/img/chaises-de-chair/IMG_8719.PNG"
+                alt="Affiche — On ne naît pas mutilées"
+                className="w-full h-auto rounded-md"
+              />
+            </div>
+
+            {/* Texte */}
+            <div className="flex flex-col gap-6">
+              <span className="text-xs tracking-[0.3em] uppercase opacity-40">
+                Exposition itinérante · 2025 &amp; 2026
+              </span>
+
+              <h3 className="text-xl md:text-3xl font-extralight tracking-tight leading-tight">
+                «&nbsp;On ne naît pas{" "}
+                <span className="italic" style={{ color: RED }}>mutilées</span>
+                &nbsp;»
+              </h3>
+
+              <p className="text-base md:text-lg font-light leading-relaxed opacity-80">
+                Une exposition engagée pour sensibiliser et lutter contre les
+                mutilations génitales féminines, conçue en collaboration avec
+                un groupe de parole de femmes et des étudiant·es de l&apos;ESAD
+                Orléans, en partenariat avec le Planning Familial du Loiret.
+              </p>
+
+              <p className="text-base md:text-lg font-light leading-relaxed opacity-50">
+                Présentée au CRIJ d&apos;Orléans lors d&apos;un vernissage le
+                31 janvier 2025, elle a été reconduite en février&nbsp;2026 à
+                la Maison des Associations, afin de continuer à porter et
+                revendiquer la parole des femmes.
+              </p>
+
+              <a
+                href="https://www.planning-familial.org/fr/le-planning-familial-du-loiret-45/droits-humains/ne-nait-pas-mutilees-ensemble-contre-les"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 w-fit text-xs tracking-[0.2em] uppercase font-light transition-opacity hover:opacity-60 mt-2"
+                style={{ color: RED }}
+              >
+                Voir l&apos;article du Planning Familial
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* ─ Navigation entre projets */}
