@@ -48,9 +48,15 @@ export default function PortfolioPdfPage() {
           {/* Icône décorative */}
           <div
             className="w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center"
-            style={{ backgroundColor: `${ACCENT}12`, border: `1px solid ${ACCENT}25` }}
+            style={{
+              backgroundColor: `${ACCENT}12`,
+              border: `1px solid ${ACCENT}25`,
+            }}
           >
-            <FileText className="w-9 h-9 md:w-11 md:h-11" style={{ color: ACCENT }} />
+            <FileText
+              className="w-9 h-9 md:w-11 md:h-11"
+              style={{ color: ACCENT }}
+            />
           </div>
 
           {/* Titre */}
@@ -68,15 +74,12 @@ export default function PortfolioPdfPage() {
             <p className="text-sm md:text-base font-light leading-relaxed opacity-55 max-w-sm mx-auto">
               Design d&apos;espace, scénographie &amp; conception d&apos;objets.
               <br />
-              PDF · 14 pages
+              PDF · 15 pages
             </p>
           </div>
 
           {/* Séparateur */}
-          <div
-            className="w-16 h-px"
-            style={{ backgroundColor: `${TXT}20` }}
-          />
+          <div className="w-16 h-px" style={{ backgroundColor: `${TXT}20` }} />
 
           {/* Boutons */}
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:justify-center">
